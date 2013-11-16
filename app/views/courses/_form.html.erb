@@ -1,25 +1,32 @@
 <%= form_for(@course) do |f| %>
-  <% if @course.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@course.errors.count, "error") %> prohibited this course from being saved:</h2>
+<% if @course.errors.any? %>
+<div id="error_explanation">
+	<h2><%= pluralize(@course.errors.count, "error") %> prohibited this course from being saved:</h2>
 
-      <ul>
-      <% @course.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
+	<ul>
+		<% @course.errors.full_messages.each do |msg| %>
+		<li>
+			<%= msg %>
+		</li>
+		<% end %>
+	</ul>
+</div>
+<% end %>
 
-  <div class="field">
-    <%= f.label :topic %><br>
-    <%= f.text_field :topic %>
-  </div>
-  <div class="field">
-    <%= f.label :description %><br>
-    <%= f.text_field :description %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
+<div class="field">
+	<%= f.label :topic %>
+	<br>
+	<%= f.text_field :topic %>
+</div>
+<div class="field">
+	<%= f.label :description %>
+	<br>
+	<%= f.text_field :description %>
+</div>
+<div class="actions">
+	<%= f.submit %>
+</div>
+<%= form_for @course, :url => courses_path, :html => { :multipart => true } do |form| %>
+<%= form.file_field :xmlfile %>
+<% end %>
 <% end %>
