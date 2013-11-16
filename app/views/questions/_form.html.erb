@@ -1,0 +1,45 @@
+<%= form_for(@question) do |f| %>
+  <% if @question.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@question.errors.count, "error") %> prohibited this question from being saved:</h2>
+
+      <ul>
+      <% @question.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :type %><br>
+    <%= f.select :type, [['Multiple-Choice-Frage', 'multiplechoice'],['Single-Choice-Frage','singlechoice'],['Offene Frage','openquestion'],['Lückentext','clozetext']] %>
+  </div>
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :body %><br>
+    <%= f.text_field :body %>
+  </div>
+  <div class="field">
+    <%= f.label :noticewrong %><br>
+    <%= f.text_field :noticewrong %>
+  </div>
+  <div class="field">
+    <%= f.label :noticeright %><br>
+    <%= f.text_field :noticeright %>
+  </div>
+  <div class="field">
+    <%= f.label :notice %><br>
+    <%= f.text_field :notice %>
+  </div>
+  <div class="field">
+    <%= f.label :topic_id %><br>
+    <%= f.number_field :topic_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
