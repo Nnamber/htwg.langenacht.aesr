@@ -2,9 +2,12 @@
 <html>
 <head>
   <title>MindmailerLiteV10</title>
+  <H1>Mindmailer Lite v1.0</H1>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
+  <%= breadcrumbs pretext: "You are here: ",
+                separator: " &rsaquo; " %>
 </head>
 <body>
 

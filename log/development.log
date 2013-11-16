@@ -19953,3 +19953,3057 @@ Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2013-11-16 13:59:25 +0
 
 
 Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2013-11-16 13:59:25 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2013-11-16 14:21:34 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/railties-4.0.1/lib/rails/templates/rails/welcome/index.html.erb (4.0ms)
+Completed 200 OK in 54ms (Views: 22.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rails/info/properties" for 127.0.0.1 at 2013-11-16 14:21:39 +0100
+Processing by Rails::InfoController#properties as */*
+  [1m[35mActiveRecord::SchemaMigration Load (0.0ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/railties-4.0.1/lib/rails/templates/rails/info/properties.html.erb (0.0ms)
+Completed 200 OK in 27ms (Views: 21.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/courses" for 127.0.0.1 at 2013-11-16 14:27:42 +0100
+Processing by CoursesController#index as HTML
+  [1m[36mCourse Load (1.0ms)[0m  [1mSELECT "courses".* FROM "courses"[0m
+  Rendered courses/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 78ms (Views: 69.4ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-16 14:27:42 +0100
+
+
+Started GET "/assets/answers.css?body=1" for 127.0.0.1 at 2013-11-16 14:27:42 +0100
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2013-11-16 14:27:42 +0100
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2013-11-16 14:27:42 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-11-16 14:27:42 +0100
+
+
+Started GET "/assets/topics.css?body=1" for 127.0.0.1 at 2013-11-16 14:27:42 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-16 14:27:42 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-16 14:27:42 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-16 14:27:42 +0100
+
+
+Started GET "/assets/answers.js?body=1" for 127.0.0.1 at 2013-11-16 14:27:42 +0100
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2013-11-16 14:27:43 +0100
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2013-11-16 14:27:43 +0100
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-11-16 14:27:43 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-16 14:27:43 +0100
+
+
+Started GET "/courses" for 127.0.0.1 at 2013-11-16 14:28:07 +0100
+Processing by CoursesController#index as HTML
+  [1m[35mCourse Load (0.0ms)[0m  SELECT "courses".* FROM "courses"
+  Rendered courses/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 17ms (Views: 14.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2013-11-16 14:28:07 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-16 14:28:07 +0100
+
+
+Started GET "/assets/answers.css?body=1" for 127.0.0.1 at 2013-11-16 14:28:07 +0100
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2013-11-16 14:28:07 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-11-16 14:28:07 +0100
+
+
+Started GET "/assets/topics.css?body=1" for 127.0.0.1 at 2013-11-16 14:28:07 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-16 14:28:07 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-16 14:28:07 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-16 14:28:07 +0100
+
+
+Started GET "/assets/answers.js?body=1" for 127.0.0.1 at 2013-11-16 14:28:07 +0100
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2013-11-16 14:28:07 +0100
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2013-11-16 14:28:08 +0100
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-11-16 14:28:08 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-16 14:28:08 +0100
+
+
+Started GET "/courses" for 127.0.0.1 at 2013-11-16 14:28:18 +0100
+Processing by CoursesController#index as HTML
+  [1m[36mCourse Load (1.0ms)[0m  [1mSELECT "courses".* FROM "courses"[0m
+  Rendered courses/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 24ms (Views: 22.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2013-11-16 14:28:18 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-11-16 14:28:18 +0100
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2013-11-16 14:28:18 +0100
+
+
+Started GET "/assets/answers.css?body=1" for 127.0.0.1 at 2013-11-16 14:28:18 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-16 14:28:18 +0100
+
+
+Started GET "/assets/topics.css?body=1" for 127.0.0.1 at 2013-11-16 14:28:19 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-16 14:28:19 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-16 14:28:19 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-16 14:28:19 +0100
+
+
+Started GET "/assets/answers.js?body=1" for 127.0.0.1 at 2013-11-16 14:28:19 +0100
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2013-11-16 14:28:19 +0100
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2013-11-16 14:28:19 +0100
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-11-16 14:28:19 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-16 14:28:19 +0100
+
+
+Started GET "/courses/select/1" for 127.0.0.1 at 2013-11-16 14:28:23 +0100
+Processing by CoursesController#select as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mCourse Load (1.0ms)[0m  SELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT 1  [["id", "1"]]
+Redirected to http://localhost:3000/topics
+Completed 302 Found in 5ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/topics" for 127.0.0.1 at 2013-11-16 14:28:24 +0100
+Processing by TopicsController#index as HTML
+  [1m[36mCourse Load (1.0ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE "courses"."id" = 1 LIMIT 1[0m
+  [1m[35mTopic Load (15.0ms)[0m  SELECT "topics".* FROM "topics" WHERE "topics"."course_id" = ?  [["course_id", 1]]
+  Rendered topics/index.html.erb within layouts/application (21.7ms)
+Completed 200 OK in 63ms (Views: 13.7ms | ActiveRecord: 17.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-16 14:28:24 +0100
+
+
+Started GET "/assets/answers.css?body=1" for 127.0.0.1 at 2013-11-16 14:28:24 +0100
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2013-11-16 14:28:24 +0100
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2013-11-16 14:28:24 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-11-16 14:28:24 +0100
+
+
+Started GET "/assets/topics.css?body=1" for 127.0.0.1 at 2013-11-16 14:28:24 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-16 14:28:24 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-16 14:28:24 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-16 14:28:24 +0100
+
+
+Started GET "/assets/answers.js?body=1" for 127.0.0.1 at 2013-11-16 14:28:24 +0100
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2013-11-16 14:28:24 +0100
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2013-11-16 14:28:24 +0100
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-11-16 14:28:24 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-16 14:28:24 +0100
+
+
+Started GET "/topics/1" for 127.0.0.1 at 2013-11-16 14:28:31 +0100
+Processing by TopicsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTopic Load (0.0ms)[0m  [1mSELECT "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered topics/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 24ms (Views: 21.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-16 14:28:31 +0100
+
+
+Started GET "/assets/answers.css?body=1" for 127.0.0.1 at 2013-11-16 14:28:31 +0100
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2013-11-16 14:28:31 +0100
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2013-11-16 14:28:31 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-11-16 14:28:31 +0100
+
+
+Started GET "/assets/topics.css?body=1" for 127.0.0.1 at 2013-11-16 14:28:31 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-16 14:28:31 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-16 14:28:31 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-16 14:28:31 +0100
+
+
+Started GET "/assets/answers.js?body=1" for 127.0.0.1 at 2013-11-16 14:28:31 +0100
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2013-11-16 14:28:31 +0100
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2013-11-16 14:28:31 +0100
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-11-16 14:28:31 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-16 14:28:32 +0100
+
+
+Started GET "/topics" for 127.0.0.1 at 2013-11-16 14:28:33 +0100
+Processing by TopicsController#index as HTML
+  [1m[35mCourse Load (1.0ms)[0m  SELECT "courses".* FROM "courses" WHERE "courses"."id" = 1 LIMIT 1
+  [1m[36mTopic Load (1.0ms)[0m  [1mSELECT "topics".* FROM "topics" WHERE "topics"."course_id" = ?[0m  [["course_id", 1]]
+  Rendered topics/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 26ms (Views: 21.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/answers.css?body=1" for 127.0.0.1 at 2013-11-16 14:28:33 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-16 14:28:33 +0100
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2013-11-16 14:28:33 +0100
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2013-11-16 14:28:33 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-11-16 14:28:34 +0100
+
+
+Started GET "/assets/topics.css?body=1" for 127.0.0.1 at 2013-11-16 14:28:34 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-16 14:28:34 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-16 14:28:34 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-16 14:28:34 +0100
+
+
+Started GET "/assets/answers.js?body=1" for 127.0.0.1 at 2013-11-16 14:28:34 +0100
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2013-11-16 14:28:34 +0100
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2013-11-16 14:28:34 +0100
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-11-16 14:28:34 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-16 14:28:34 +0100
+
+
+Started GET "/topics" for 127.0.0.1 at 2013-11-16 14:30:09 +0100
+Processing by TopicsController#index as HTML
+  [1m[35mCourse Load (1.0ms)[0m  SELECT "courses".* FROM "courses" WHERE "courses"."id" = 1 LIMIT 1
+  [1m[36mTopic Load (1.0ms)[0m  [1mSELECT "topics".* FROM "topics" WHERE "topics"."course_id" = ?[0m  [["course_id", 1]]
+  Rendered topics/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 30ms (Views: 24.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2013-11-16 14:30:09 +0100
+
+
+Started GET "/assets/answers.css?body=1" for 127.0.0.1 at 2013-11-16 14:30:09 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-16 14:30:09 +0100
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2013-11-16 14:30:09 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-11-16 14:30:09 +0100
+
+
+Started GET "/assets/topics.css?body=1" for 127.0.0.1 at 2013-11-16 14:30:09 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-16 14:30:09 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-16 14:30:09 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-16 14:30:09 +0100
+
+
+Started GET "/assets/answers.js?body=1" for 127.0.0.1 at 2013-11-16 14:30:09 +0100
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2013-11-16 14:30:09 +0100
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2013-11-16 14:30:09 +0100
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-11-16 14:30:09 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-16 14:30:10 +0100
+
+
+Started GET "/topics/select/1" for 127.0.0.1 at 2013-11-16 14:30:13 +0100
+Processing by TopicsController#select as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mTopic Load (1.0ms)[0m  SELECT "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1  [["id", "1"]]
+Redirected to http://localhost:3000/questions
+Completed 302 Found in 4ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2013-11-16 14:30:13 +0100
+Processing by QuestionsController#index as HTML
+  [1m[36mTopic Load (1.0ms)[0m  [1mSELECT "topics".* FROM "topics" WHERE "topics"."id" = 1 LIMIT 1[0m
+  [1m[35mQuestion Load (0.0ms)[0m  SELECT "questions".* FROM "questions" WHERE "questions"."topic_id" = ?  [["topic_id", 1]]
+  Rendered questions/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 25ms (Views: 17.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-16 14:30:13 +0100
+
+
+Started GET "/assets/answers.css?body=1" for 127.0.0.1 at 2013-11-16 14:30:14 +0100
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2013-11-16 14:30:14 +0100
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2013-11-16 14:30:14 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-11-16 14:30:14 +0100
+
+
+Started GET "/assets/topics.css?body=1" for 127.0.0.1 at 2013-11-16 14:30:14 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-16 14:30:14 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-16 14:30:14 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-16 14:30:14 +0100
+
+
+Started GET "/assets/answers.js?body=1" for 127.0.0.1 at 2013-11-16 14:30:14 +0100
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2013-11-16 14:30:14 +0100
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-11-16 14:30:14 +0100
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2013-11-16 14:30:14 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-16 14:30:14 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-16 14:30:16 +0100
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2013-11-16 14:30:16 +0100
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2013-11-16 14:30:16 +0100
+
+
+Started GET "/assets/answers.css?body=1" for 127.0.0.1 at 2013-11-16 14:30:16 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-11-16 14:30:16 +0100
+
+
+Started GET "/assets/topics.css?body=1" for 127.0.0.1 at 2013-11-16 14:30:16 +0100
+
+
+Started GET "/topics" for 127.0.0.1 at 2013-11-16 14:30:17 +0100
+Processing by TopicsController#index as HTML
+  [1m[36mCourse Load (1.0ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE "courses"."id" = 1 LIMIT 1[0m
+  [1m[35mTopic Load (1.0ms)[0m  SELECT "topics".* FROM "topics" WHERE "topics"."course_id" = ?  [["course_id", 1]]
+  Rendered topics/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 28ms (Views: 22.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-16 14:30:17 +0100
+
+
+Started GET "/assets/answers.css?body=1" for 127.0.0.1 at 2013-11-16 14:30:17 +0100
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2013-11-16 14:30:17 +0100
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2013-11-16 14:30:17 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-11-16 14:30:17 +0100
+
+
+Started GET "/assets/topics.css?body=1" for 127.0.0.1 at 2013-11-16 14:30:17 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-16 14:30:17 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-16 14:30:17 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-16 14:30:17 +0100
+
+
+Started GET "/assets/answers.js?body=1" for 127.0.0.1 at 2013-11-16 14:30:18 +0100
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2013-11-16 14:30:18 +0100
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2013-11-16 14:30:18 +0100
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-11-16 14:30:18 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-16 14:30:18 +0100
+
+
+Started GET "/topics/1" for 127.0.0.1 at 2013-11-16 14:30:19 +0100
+Processing by TopicsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTopic Load (0.0ms)[0m  [1mSELECT "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered topics/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 22ms (Views: 20.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-16 14:30:19 +0100
+
+
+Started GET "/assets/answers.css?body=1" for 127.0.0.1 at 2013-11-16 14:30:19 +0100
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2013-11-16 14:30:19 +0100
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2013-11-16 14:30:19 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-11-16 14:30:19 +0100
+
+
+Started GET "/assets/topics.css?body=1" for 127.0.0.1 at 2013-11-16 14:30:19 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-16 14:30:19 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-16 14:30:19 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-16 14:30:19 +0100
+
+
+Started GET "/assets/answers.js?body=1" for 127.0.0.1 at 2013-11-16 14:30:19 +0100
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2013-11-16 14:30:19 +0100
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2013-11-16 14:30:19 +0100
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-11-16 14:30:19 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-16 14:30:20 +0100
+
+
+Started GET "/topics" for 127.0.0.1 at 2013-11-16 14:30:22 +0100
+Processing by TopicsController#index as HTML
+  [1m[35mCourse Load (0.0ms)[0m  SELECT "courses".* FROM "courses" WHERE "courses"."id" = 1 LIMIT 1
+  [1m[36mTopic Load (0.0ms)[0m  [1mSELECT "topics".* FROM "topics" WHERE "topics"."course_id" = ?[0m  [["course_id", 1]]
+  Rendered topics/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 26ms (Views: 23.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2013-11-16 14:30:22 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-16 14:30:22 +0100
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2013-11-16 14:30:22 +0100
+
+
+Started GET "/assets/answers.css?body=1" for 127.0.0.1 at 2013-11-16 14:30:22 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-11-16 14:30:22 +0100
+
+
+Started GET "/assets/topics.css?body=1" for 127.0.0.1 at 2013-11-16 14:30:22 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-16 14:30:22 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-16 14:30:22 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-16 14:30:22 +0100
+
+
+Started GET "/assets/answers.js?body=1" for 127.0.0.1 at 2013-11-16 14:30:22 +0100
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2013-11-16 14:30:23 +0100
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2013-11-16 14:30:23 +0100
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-11-16 14:30:23 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-16 14:30:23 +0100
+
+
+Started GET "/topics/1/edit" for 127.0.0.1 at 2013-11-16 14:30:26 +0100
+Processing by TopicsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mTopic Load (0.0ms)[0m  SELECT "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered topics/_form.html.erb (38.0ms)
+  Rendered topics/edit.html.erb within layouts/application (46.0ms)
+Completed 200 OK in 58ms (Views: 56.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-16 14:30:26 +0100
+
+
+Started GET "/assets/answers.css?body=1" for 127.0.0.1 at 2013-11-16 14:30:26 +0100
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2013-11-16 14:30:26 +0100
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2013-11-16 14:30:26 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-11-16 14:30:26 +0100
+
+
+Started GET "/assets/topics.css?body=1" for 127.0.0.1 at 2013-11-16 14:30:26 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-16 14:30:26 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-16 14:30:26 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-16 14:30:26 +0100
+
+
+Started GET "/assets/answers.js?body=1" for 127.0.0.1 at 2013-11-16 14:30:26 +0100
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2013-11-16 14:30:26 +0100
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2013-11-16 14:30:26 +0100
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-11-16 14:30:26 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-16 14:30:27 +0100
+
+
+Started GET "/topics/1/edit" for 127.0.0.1 at 2013-11-16 14:31:41 +0100
+Processing by TopicsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTopic Load (1.0ms)[0m  [1mSELECT "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered topics/_form.html.erb (2.0ms)
+  Rendered topics/edit.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 21ms (Views: 17.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-16 14:31:41 +0100
+
+
+Started GET "/assets/answers.css?body=1" for 127.0.0.1 at 2013-11-16 14:31:41 +0100
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2013-11-16 14:31:41 +0100
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2013-11-16 14:31:41 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-11-16 14:31:41 +0100
+
+
+Started GET "/assets/topics.css?body=1" for 127.0.0.1 at 2013-11-16 14:31:41 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-16 14:31:41 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-16 14:31:41 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-16 14:31:41 +0100
+
+
+Started GET "/assets/answers.js?body=1" for 127.0.0.1 at 2013-11-16 14:31:41 +0100
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2013-11-16 14:31:42 +0100
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2013-11-16 14:31:42 +0100
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-11-16 14:31:42 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-16 14:31:42 +0100
+
+
+Started GET "/topics" for 127.0.0.1 at 2013-11-16 14:31:43 +0100
+Processing by TopicsController#index as HTML
+  [1m[35mCourse Load (1.0ms)[0m  SELECT "courses".* FROM "courses" WHERE "courses"."id" = 1 LIMIT 1
+  [1m[36mTopic Load (0.0ms)[0m  [1mSELECT "topics".* FROM "topics" WHERE "topics"."course_id" = ?[0m  [["course_id", 1]]
+  Rendered topics/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 23ms (Views: 19.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/answers.css?body=1" for 127.0.0.1 at 2013-11-16 14:31:43 +0100
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2013-11-16 14:31:43 +0100
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2013-11-16 14:31:43 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-16 14:31:43 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-11-16 14:31:44 +0100
+
+
+Started GET "/assets/topics.css?body=1" for 127.0.0.1 at 2013-11-16 14:31:44 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-16 14:31:44 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-16 14:31:44 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-16 14:31:44 +0100
+
+
+Started GET "/assets/answers.js?body=1" for 127.0.0.1 at 2013-11-16 14:31:44 +0100
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2013-11-16 14:31:44 +0100
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2013-11-16 14:31:44 +0100
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-11-16 14:31:44 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-16 14:31:44 +0100
+
+
+Started GET "/topics" for 127.0.0.1 at 2013-11-16 14:31:46 +0100
+Processing by TopicsController#index as HTML
+  [1m[35mCourse Load (1.0ms)[0m  SELECT "courses".* FROM "courses" WHERE "courses"."id" = 1 LIMIT 1
+  [1m[36mTopic Load (0.0ms)[0m  [1mSELECT "topics".* FROM "topics" WHERE "topics"."course_id" = ?[0m  [["course_id", 1]]
+  Rendered topics/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 13ms (Views: 11.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/answers.css?body=1" for 127.0.0.1 at 2013-11-16 14:31:46 +0100
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2013-11-16 14:31:46 +0100
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2013-11-16 14:31:46 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-16 14:31:46 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-11-16 14:31:46 +0100
+
+
+Started GET "/assets/topics.css?body=1" for 127.0.0.1 at 2013-11-16 14:31:46 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-16 14:31:46 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-16 14:31:46 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-16 14:31:46 +0100
+
+
+Started GET "/assets/answers.js?body=1" for 127.0.0.1 at 2013-11-16 14:31:46 +0100
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2013-11-16 14:31:46 +0100
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2013-11-16 14:31:46 +0100
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-11-16 14:31:46 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-16 14:31:46 +0100
+
+
+Started GET "/courses" for 127.0.0.1 at 2013-11-16 14:31:49 +0100
+Processing by CoursesController#index as HTML
+  [1m[35mCourse Load (0.0ms)[0m  SELECT "courses".* FROM "courses"
+  Rendered courses/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 9ms (Views: 9.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2013-11-16 14:31:49 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-16 14:31:49 +0100
+
+
+Started GET "/assets/answers.css?body=1" for 127.0.0.1 at 2013-11-16 14:31:49 +0100
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2013-11-16 14:31:49 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-11-16 14:31:49 +0100
+
+
+Started GET "/assets/topics.css?body=1" for 127.0.0.1 at 2013-11-16 14:31:49 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-16 14:31:49 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-16 14:31:49 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-16 14:31:49 +0100
+
+
+Started GET "/assets/answers.js?body=1" for 127.0.0.1 at 2013-11-16 14:31:49 +0100
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2013-11-16 14:31:49 +0100
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2013-11-16 14:31:49 +0100
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-11-16 14:31:50 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-16 14:31:50 +0100
+
+
+Started GET "/courses" for 127.0.0.1 at 2013-11-16 14:31:53 +0100
+Processing by CoursesController#index as HTML
+  [1m[36mCourse Load (0.0ms)[0m  [1mSELECT "courses".* FROM "courses"[0m
+  Rendered courses/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 11ms (Views: 10.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-16 14:31:53 +0100
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2013-11-16 14:31:53 +0100
+
+
+Started GET "/assets/answers.css?body=1" for 127.0.0.1 at 2013-11-16 14:31:53 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-11-16 14:31:53 +0100
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2013-11-16 14:31:53 +0100
+
+
+Started GET "/assets/topics.css?body=1" for 127.0.0.1 at 2013-11-16 14:31:53 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-16 14:31:53 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-16 14:31:53 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-16 14:31:54 +0100
+
+
+Started GET "/assets/answers.js?body=1" for 127.0.0.1 at 2013-11-16 14:31:54 +0100
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2013-11-16 14:31:54 +0100
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2013-11-16 14:31:54 +0100
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-11-16 14:31:54 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-16 14:31:54 +0100
+
+
+Started GET "/courses/select/1" for 127.0.0.1 at 2013-11-16 14:31:57 +0100
+Processing by CoursesController#select as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mCourse Load (0.0ms)[0m  SELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT 1  [["id", "1"]]
+Redirected to http://localhost:3000/topics
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/topics" for 127.0.0.1 at 2013-11-16 14:31:57 +0100
+Processing by TopicsController#index as HTML
+  [1m[36mCourse Load (1.0ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE "courses"."id" = 1 LIMIT 1[0m
+  [1m[35mTopic Load (0.0ms)[0m  SELECT "topics".* FROM "topics" WHERE "topics"."course_id" = ?  [["course_id", 1]]
+  Rendered topics/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 15ms (Views: 13.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-16 14:31:57 +0100
+
+
+Started GET "/assets/answers.css?body=1" for 127.0.0.1 at 2013-11-16 14:31:57 +0100
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2013-11-16 14:31:57 +0100
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2013-11-16 14:31:57 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-11-16 14:31:57 +0100
+
+
+Started GET "/assets/topics.css?body=1" for 127.0.0.1 at 2013-11-16 14:31:57 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-16 14:31:57 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-16 14:31:57 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-16 14:31:57 +0100
+
+
+Started GET "/assets/answers.js?body=1" for 127.0.0.1 at 2013-11-16 14:31:57 +0100
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2013-11-16 14:31:57 +0100
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2013-11-16 14:31:57 +0100
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-11-16 14:31:57 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-16 14:31:58 +0100
+
+
+Started GET "/topics" for 127.0.0.1 at 2013-11-16 14:33:09 +0100
+Processing by TopicsController#index as HTML
+  [1m[36mCourse Load (0.0ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE "courses"."id" = 1 LIMIT 1[0m
+  [1m[35mTopic Load (0.0ms)[0m  SELECT "topics".* FROM "topics" WHERE "topics"."course_id" = ?  [["course_id", 1]]
+  Rendered topics/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 19ms (Views: 17.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-16 14:33:09 +0100
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2013-11-16 14:33:09 +0100
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2013-11-16 14:33:09 +0100
+
+
+Started GET "/assets/answers.css?body=1" for 127.0.0.1 at 2013-11-16 14:33:09 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-11-16 14:33:09 +0100
+
+
+Started GET "/assets/topics.css?body=1" for 127.0.0.1 at 2013-11-16 14:33:09 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-16 14:33:09 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-16 14:33:09 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-16 14:33:09 +0100
+
+
+Started GET "/assets/answers.js?body=1" for 127.0.0.1 at 2013-11-16 14:33:09 +0100
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2013-11-16 14:33:10 +0100
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2013-11-16 14:33:10 +0100
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-11-16 14:33:10 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-16 14:33:10 +0100
+
+
+Started GET "/topics/select/1" for 127.0.0.1 at 2013-11-16 14:33:12 +0100
+Processing by TopicsController#select as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTopic Load (0.0ms)[0m  [1mSELECT "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Redirected to http://localhost:3000/questions
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2013-11-16 14:33:12 +0100
+Processing by QuestionsController#index as HTML
+  [1m[35mTopic Load (1.0ms)[0m  SELECT "topics".* FROM "topics" WHERE "topics"."id" = 1 LIMIT 1
+  [1m[36mQuestion Load (0.0ms)[0m  [1mSELECT "questions".* FROM "questions" WHERE "questions"."topic_id" = ?[0m  [["topic_id", 1]]
+  Rendered questions/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 13ms (Views: 11.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-16 14:33:13 +0100
+
+
+Started GET "/assets/answers.css?body=1" for 127.0.0.1 at 2013-11-16 14:33:13 +0100
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2013-11-16 14:33:13 +0100
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2013-11-16 14:33:13 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-11-16 14:33:13 +0100
+
+
+Started GET "/assets/topics.css?body=1" for 127.0.0.1 at 2013-11-16 14:33:13 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-16 14:33:13 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-16 14:33:13 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-16 14:33:13 +0100
+
+
+Started GET "/assets/answers.js?body=1" for 127.0.0.1 at 2013-11-16 14:33:13 +0100
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2013-11-16 14:33:13 +0100
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2013-11-16 14:33:13 +0100
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-11-16 14:33:13 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-16 14:33:13 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-16 14:33:17 +0100
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2013-11-16 14:33:17 +0100
+
+
+Started GET "/assets/answers.css?body=1" for 127.0.0.1 at 2013-11-16 14:33:17 +0100
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2013-11-16 14:33:17 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-11-16 14:33:17 +0100
+
+
+Started GET "/assets/topics.css?body=1" for 127.0.0.1 at 2013-11-16 14:33:17 +0100
+
+
+Started GET "/topics" for 127.0.0.1 at 2013-11-16 14:33:17 +0100
+Processing by TopicsController#index as HTML
+  [1m[35mCourse Load (1.0ms)[0m  SELECT "courses".* FROM "courses" WHERE "courses"."id" = 1 LIMIT 1
+  [1m[36mTopic Load (1.0ms)[0m  [1mSELECT "topics".* FROM "topics" WHERE "topics"."course_id" = ?[0m  [["course_id", 1]]
+  Rendered topics/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 30ms (Views: 25.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-16 14:33:17 +0100
+
+
+Started GET "/assets/answers.css?body=1" for 127.0.0.1 at 2013-11-16 14:33:17 +0100
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2013-11-16 14:33:17 +0100
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2013-11-16 14:33:17 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-11-16 14:33:17 +0100
+
+
+Started GET "/assets/topics.css?body=1" for 127.0.0.1 at 2013-11-16 14:33:18 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-16 14:33:18 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-16 14:33:18 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-16 14:33:18 +0100
+
+
+Started GET "/assets/answers.js?body=1" for 127.0.0.1 at 2013-11-16 14:33:18 +0100
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2013-11-16 14:33:18 +0100
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2013-11-16 14:33:18 +0100
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-11-16 14:33:18 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-16 14:33:18 +0100
+
+
+Started GET "/topics/new" for 127.0.0.1 at 2013-11-16 14:33:38 +0100
+Processing by TopicsController#new as HTML
+  Rendered topics/_form.html.erb (2.0ms)
+  Rendered topics/new.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 18ms (Views: 16.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-16 14:33:38 +0100
+
+
+Started GET "/assets/answers.css?body=1" for 127.0.0.1 at 2013-11-16 14:33:38 +0100
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2013-11-16 14:33:38 +0100
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2013-11-16 14:33:38 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-11-16 14:33:38 +0100
+
+
+Started GET "/assets/topics.css?body=1" for 127.0.0.1 at 2013-11-16 14:33:38 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-16 14:33:38 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-16 14:33:38 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-16 14:33:38 +0100
+
+
+Started GET "/assets/answers.js?body=1" for 127.0.0.1 at 2013-11-16 14:33:38 +0100
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2013-11-16 14:33:38 +0100
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2013-11-16 14:33:39 +0100
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-11-16 14:33:39 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-16 14:33:39 +0100
+
+
+Started POST "/topics" for 127.0.0.1 at 2013-11-16 14:33:39 +0100
+Processing by TopicsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JIuWkKFnXSXh5AWgDBUCLjl+0HZosKPtr99YTW66j0c=", "topic"=>{"name"=>"", "description"=>""}, "commit"=>"Create Topic"}
+  [1m[35mCourse Load (1.0ms)[0m  SELECT "courses".* FROM "courses" WHERE "courses"."id" = 1 LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (3.0ms)[0m  INSERT INTO "topics" ("course_id", "created_at", "description", "name", "updated_at") VALUES (?, ?, ?, ?, ?)  [["course_id", 1], ["created_at", Sat, 16 Nov 2013 13:33:39 UTC +00:00], ["description", ""], ["name", ""], ["updated_at", Sat, 16 Nov 2013 13:33:39 UTC +00:00]]
+  [1m[36m (8.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/topics/3
+Completed 302 Found in 20ms (ActiveRecord: 12.1ms)
+
+
+Started GET "/topics/3" for 127.0.0.1 at 2013-11-16 14:33:39 +0100
+Processing by TopicsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mTopic Load (0.0ms)[0m  SELECT "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1  [["id", "3"]]
+  Rendered topics/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-16 14:33:39 +0100
+
+
+Started GET "/assets/answers.css?body=1" for 127.0.0.1 at 2013-11-16 14:33:40 +0100
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2013-11-16 14:33:40 +0100
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2013-11-16 14:33:40 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-11-16 14:33:40 +0100
+
+
+Started GET "/assets/topics.css?body=1" for 127.0.0.1 at 2013-11-16 14:33:40 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-16 14:33:40 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-16 14:33:40 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-16 14:33:40 +0100
+
+
+Started GET "/assets/answers.js?body=1" for 127.0.0.1 at 2013-11-16 14:33:40 +0100
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2013-11-16 14:33:40 +0100
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2013-11-16 14:33:40 +0100
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-11-16 14:33:40 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-16 14:33:40 +0100
+
+
+Started GET "/topics" for 127.0.0.1 at 2013-11-16 14:33:48 +0100
+Processing by TopicsController#index as HTML
+  [1m[36mCourse Load (0.0ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE "courses"."id" = 1 LIMIT 1[0m
+  [1m[35mTopic Load (0.0ms)[0m  SELECT "topics".* FROM "topics" WHERE "topics"."course_id" = ?  [["course_id", 1]]
+  Rendered topics/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 27ms (Views: 23.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-16 14:33:48 +0100
+
+
+Started GET "/assets/answers.css?body=1" for 127.0.0.1 at 2013-11-16 14:33:48 +0100
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2013-11-16 14:33:48 +0100
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2013-11-16 14:33:48 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-11-16 14:33:48 +0100
+
+
+Started GET "/assets/topics.css?body=1" for 127.0.0.1 at 2013-11-16 14:33:48 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-16 14:33:48 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-16 14:33:48 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-16 14:33:48 +0100
+
+
+Started GET "/assets/answers.js?body=1" for 127.0.0.1 at 2013-11-16 14:33:48 +0100
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2013-11-16 14:33:48 +0100
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2013-11-16 14:33:48 +0100
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-11-16 14:33:48 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-16 14:33:49 +0100
+
+
+Started GET "/topics" for 127.0.0.1 at 2013-11-16 14:35:01 +0100
+Processing by TopicsController#index as HTML
+  [1m[36mCourse Load (0.0ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE "courses"."id" = 1 LIMIT 1[0m
+  [1m[35mTopic Load (1.0ms)[0m  SELECT "topics".* FROM "topics" WHERE "topics"."course_id" = ?  [["course_id", 1]]
+  Rendered topics/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 24ms (Views: 19.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2013-11-16 14:35:01 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-16 14:35:01 +0100
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2013-11-16 14:35:01 +0100
+
+
+Started GET "/assets/answers.css?body=1" for 127.0.0.1 at 2013-11-16 14:35:01 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-11-16 14:35:01 +0100
+
+
+Started GET "/assets/topics.css?body=1" for 127.0.0.1 at 2013-11-16 14:35:01 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-16 14:35:01 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-16 14:35:01 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-16 14:35:01 +0100
+
+
+Started GET "/assets/answers.js?body=1" for 127.0.0.1 at 2013-11-16 14:35:01 +0100
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2013-11-16 14:35:01 +0100
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2013-11-16 14:35:01 +0100
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-11-16 14:35:01 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-16 14:35:01 +0100
+
+
+Started GET "/topics/select/1" for 127.0.0.1 at 2013-11-16 14:35:04 +0100
+Processing by TopicsController#select as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTopic Load (0.0ms)[0m  [1mSELECT "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Redirected to http://localhost:3000/questions
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2013-11-16 14:35:04 +0100
+Processing by QuestionsController#index as HTML
+  [1m[35mTopic Load (0.0ms)[0m  SELECT "topics".* FROM "topics" WHERE "topics"."id" = 1 LIMIT 1
+  [1m[36mQuestion Load (0.0ms)[0m  [1mSELECT "questions".* FROM "questions" WHERE "questions"."topic_id" = ?[0m  [["topic_id", 1]]
+  Rendered questions/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 22ms (Views: 19.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-16 14:35:04 +0100
+
+
+Started GET "/assets/answers.css?body=1" for 127.0.0.1 at 2013-11-16 14:35:05 +0100
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2013-11-16 14:35:05 +0100
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2013-11-16 14:35:05 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-11-16 14:35:05 +0100
+
+
+Started GET "/assets/topics.css?body=1" for 127.0.0.1 at 2013-11-16 14:35:05 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-16 14:35:05 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-16 14:35:05 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-16 14:35:05 +0100
+
+
+Started GET "/assets/answers.js?body=1" for 127.0.0.1 at 2013-11-16 14:35:05 +0100
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2013-11-16 14:35:05 +0100
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2013-11-16 14:35:05 +0100
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-11-16 14:35:05 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-16 14:35:05 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-16 14:35:07 +0100
+
+
+Started GET "/assets/answers.css?body=1" for 127.0.0.1 at 2013-11-16 14:35:07 +0100
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2013-11-16 14:35:07 +0100
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2013-11-16 14:35:07 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-11-16 14:35:07 +0100
+
+
+Started GET "/assets/topics.css?body=1" for 127.0.0.1 at 2013-11-16 14:35:07 +0100
+
+
+Started GET "/topics" for 127.0.0.1 at 2013-11-16 14:35:08 +0100
+Processing by TopicsController#index as HTML
+  [1m[35mCourse Load (1.0ms)[0m  SELECT "courses".* FROM "courses" WHERE "courses"."id" = 1 LIMIT 1
+  [1m[36mTopic Load (1.0ms)[0m  [1mSELECT "topics".* FROM "topics" WHERE "topics"."course_id" = ?[0m  [["course_id", 1]]
+  Rendered topics/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 22ms (Views: 18.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-16 14:35:08 +0100
+
+
+Started GET "/assets/answers.css?body=1" for 127.0.0.1 at 2013-11-16 14:35:08 +0100
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2013-11-16 14:35:08 +0100
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2013-11-16 14:35:08 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-11-16 14:35:08 +0100
+
+
+Started GET "/assets/topics.css?body=1" for 127.0.0.1 at 2013-11-16 14:35:08 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-16 14:35:08 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-16 14:35:08 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-16 14:35:08 +0100
+
+
+Started GET "/assets/answers.js?body=1" for 127.0.0.1 at 2013-11-16 14:35:08 +0100
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2013-11-16 14:35:08 +0100
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2013-11-16 14:35:09 +0100
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-11-16 14:35:09 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-16 14:35:09 +0100
+
+
+Started GET "/topics/1" for 127.0.0.1 at 2013-11-16 14:35:10 +0100
+Processing by TopicsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mTopic Load (0.0ms)[0m  SELECT "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered topics/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 20ms (Views: 18.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-16 14:35:10 +0100
+
+
+Started GET "/assets/answers.css?body=1" for 127.0.0.1 at 2013-11-16 14:35:10 +0100
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2013-11-16 14:35:10 +0100
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2013-11-16 14:35:10 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-11-16 14:35:10 +0100
+
+
+Started GET "/assets/topics.css?body=1" for 127.0.0.1 at 2013-11-16 14:35:10 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-16 14:35:10 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-16 14:35:10 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-16 14:35:10 +0100
+
+
+Started GET "/assets/answers.js?body=1" for 127.0.0.1 at 2013-11-16 14:35:10 +0100
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2013-11-16 14:35:10 +0100
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2013-11-16 14:35:10 +0100
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-11-16 14:35:10 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-16 14:35:11 +0100
+
+
+Started GET "/topics" for 127.0.0.1 at 2013-11-16 14:35:13 +0100
+Processing by TopicsController#index as HTML
+  [1m[36mCourse Load (1.0ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE "courses"."id" = 1 LIMIT 1[0m
+  [1m[35mTopic Load (1.0ms)[0m  SELECT "topics".* FROM "topics" WHERE "topics"."course_id" = ?  [["course_id", 1]]
+  Rendered topics/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 26ms (Views: 21.6ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-16 14:35:13 +0100
+
+
+Started GET "/assets/answers.css?body=1" for 127.0.0.1 at 2013-11-16 14:35:13 +0100
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2013-11-16 14:35:13 +0100
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2013-11-16 14:35:13 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-11-16 14:35:13 +0100
+
+
+Started GET "/assets/topics.css?body=1" for 127.0.0.1 at 2013-11-16 14:35:13 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-16 14:35:13 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-16 14:35:13 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-16 14:35:13 +0100
+
+
+Started GET "/assets/answers.js?body=1" for 127.0.0.1 at 2013-11-16 14:35:13 +0100
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2013-11-16 14:35:13 +0100
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2013-11-16 14:35:13 +0100
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-11-16 14:35:13 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-16 14:35:14 +0100
+
+
+Started GET "/topics/1" for 127.0.0.1 at 2013-11-16 14:35:17 +0100
+Processing by TopicsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTopic Load (0.0ms)[0m  [1mSELECT "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered topics/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 13ms (Views: 12.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-16 14:35:17 +0100
+
+
+Started GET "/assets/answers.css?body=1" for 127.0.0.1 at 2013-11-16 14:35:17 +0100
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2013-11-16 14:35:17 +0100
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2013-11-16 14:35:17 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-11-16 14:35:17 +0100
+
+
+Started GET "/assets/topics.css?body=1" for 127.0.0.1 at 2013-11-16 14:35:17 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-16 14:35:17 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-16 14:35:17 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-16 14:35:17 +0100
+
+
+Started GET "/assets/answers.js?body=1" for 127.0.0.1 at 2013-11-16 14:35:18 +0100
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2013-11-16 14:35:18 +0100
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2013-11-16 14:35:18 +0100
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-11-16 14:35:18 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-16 14:35:18 +0100
+
+
+Started GET "/topics/1" for 127.0.0.1 at 2013-11-16 14:35:20 +0100
+Processing by TopicsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mTopic Load (1.0ms)[0m  SELECT "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered topics/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 21ms (Views: 18.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2013-11-16 14:35:20 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-16 14:35:20 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-11-16 14:35:20 +0100
+
+
+Started GET "/assets/answers.css?body=1" for 127.0.0.1 at 2013-11-16 14:35:20 +0100
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2013-11-16 14:35:20 +0100
+
+
+Started GET "/assets/topics.css?body=1" for 127.0.0.1 at 2013-11-16 14:35:21 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-16 14:35:21 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-16 14:35:21 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-16 14:35:21 +0100
+
+
+Started GET "/assets/answers.js?body=1" for 127.0.0.1 at 2013-11-16 14:35:21 +0100
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2013-11-16 14:35:21 +0100
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2013-11-16 14:35:21 +0100
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-11-16 14:35:21 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-16 14:35:21 +0100
+
+
+Started GET "/topics/1" for 127.0.0.1 at 2013-11-16 14:36:09 +0100
+Processing by TopicsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTopic Load (0.0ms)[0m  [1mSELECT "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered topics/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 11ms (Views: 9.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-16 14:36:10 +0100
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2013-11-16 14:36:10 +0100
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2013-11-16 14:36:10 +0100
+
+
+Started GET "/assets/answers.css?body=1" for 127.0.0.1 at 2013-11-16 14:36:10 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-11-16 14:36:10 +0100
+
+
+Started GET "/assets/topics.css?body=1" for 127.0.0.1 at 2013-11-16 14:36:10 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-16 14:36:10 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-16 14:36:10 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-16 14:36:10 +0100
+
+
+Started GET "/assets/answers.js?body=1" for 127.0.0.1 at 2013-11-16 14:36:10 +0100
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2013-11-16 14:36:10 +0100
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2013-11-16 14:36:10 +0100
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-11-16 14:36:10 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-16 14:36:10 +0100
+
+
+Started GET "/topics" for 127.0.0.1 at 2013-11-16 14:36:12 +0100
+Processing by TopicsController#index as HTML
+  [1m[35mCourse Load (1.0ms)[0m  SELECT "courses".* FROM "courses" WHERE "courses"."id" = 1 LIMIT 1
+  [1m[36mTopic Load (1.0ms)[0m  [1mSELECT "topics".* FROM "topics" WHERE "topics"."course_id" = ?[0m  [["course_id", 1]]
+  Rendered topics/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 27ms (Views: 21.8ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-16 14:36:12 +0100
+
+
+Started GET "/assets/answers.css?body=1" for 127.0.0.1 at 2013-11-16 14:36:12 +0100
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2013-11-16 14:36:12 +0100
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2013-11-16 14:36:12 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-11-16 14:36:12 +0100
+
+
+Started GET "/assets/topics.css?body=1" for 127.0.0.1 at 2013-11-16 14:36:12 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-16 14:36:12 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-16 14:36:12 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-16 14:36:12 +0100
+
+
+Started GET "/assets/answers.js?body=1" for 127.0.0.1 at 2013-11-16 14:36:12 +0100
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2013-11-16 14:36:12 +0100
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2013-11-16 14:36:12 +0100
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-11-16 14:36:12 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-16 14:36:12 +0100
+
+
+Started GET "/topics" for 127.0.0.1 at 2013-11-16 14:36:15 +0100
+Processing by TopicsController#index as HTML
+  [1m[35mCourse Load (1.0ms)[0m  SELECT "courses".* FROM "courses" WHERE "courses"."id" = 1 LIMIT 1
+  [1m[36mTopic Load (1.0ms)[0m  [1mSELECT "topics".* FROM "topics" WHERE "topics"."course_id" = ?[0m  [["course_id", 1]]
+  Rendered topics/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 30ms (Views: 25.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-16 14:36:15 +0100
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2013-11-16 14:36:15 +0100
+
+
+Started GET "/assets/answers.css?body=1" for 127.0.0.1 at 2013-11-16 14:36:15 +0100
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2013-11-16 14:36:15 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-11-16 14:36:16 +0100
+
+
+Started GET "/assets/topics.css?body=1" for 127.0.0.1 at 2013-11-16 14:36:16 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-16 14:36:16 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-16 14:36:16 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-16 14:36:16 +0100
+
+
+Started GET "/assets/answers.js?body=1" for 127.0.0.1 at 2013-11-16 14:36:16 +0100
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2013-11-16 14:36:16 +0100
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2013-11-16 14:36:16 +0100
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-11-16 14:36:16 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-16 14:36:16 +0100
+
+
+Started GET "/topics/select/1" for 127.0.0.1 at 2013-11-16 14:36:17 +0100
+Processing by TopicsController#select as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mTopic Load (1.0ms)[0m  SELECT "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1  [["id", "1"]]
+Redirected to http://localhost:3000/questions
+Completed 302 Found in 4ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2013-11-16 14:36:17 +0100
+Processing by QuestionsController#index as HTML
+  [1m[36mTopic Load (0.0ms)[0m  [1mSELECT "topics".* FROM "topics" WHERE "topics"."id" = 1 LIMIT 1[0m
+  [1m[35mQuestion Load (0.0ms)[0m  SELECT "questions".* FROM "questions" WHERE "questions"."topic_id" = ?  [["topic_id", 1]]
+  Rendered questions/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 12ms (Views: 10.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-16 14:36:17 +0100
+
+
+Started GET "/assets/answers.css?body=1" for 127.0.0.1 at 2013-11-16 14:36:17 +0100
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2013-11-16 14:36:17 +0100
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2013-11-16 14:36:17 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-11-16 14:36:17 +0100
+
+
+Started GET "/assets/topics.css?body=1" for 127.0.0.1 at 2013-11-16 14:36:17 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-16 14:36:17 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-16 14:36:18 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-16 14:36:18 +0100
+
+
+Started GET "/assets/answers.js?body=1" for 127.0.0.1 at 2013-11-16 14:36:18 +0100
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2013-11-16 14:36:18 +0100
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2013-11-16 14:36:18 +0100
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-11-16 14:36:18 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-16 14:36:18 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-16 14:36:20 +0100
+
+
+Started GET "/assets/answers.css?body=1" for 127.0.0.1 at 2013-11-16 14:36:20 +0100
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2013-11-16 14:36:20 +0100
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2013-11-16 14:36:20 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-11-16 14:36:20 +0100
+
+
+Started GET "/assets/topics.css?body=1" for 127.0.0.1 at 2013-11-16 14:36:20 +0100
+
+
+Started GET "/topics" for 127.0.0.1 at 2013-11-16 14:36:20 +0100
+Processing by TopicsController#index as HTML
+  [1m[36mCourse Load (1.0ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE "courses"."id" = 1 LIMIT 1[0m
+  [1m[35mTopic Load (1.0ms)[0m  SELECT "topics".* FROM "topics" WHERE "topics"."course_id" = ?  [["course_id", 1]]
+  Rendered topics/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 25ms (Views: 21.3ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-16 14:36:21 +0100
+
+
+Started GET "/assets/answers.css?body=1" for 127.0.0.1 at 2013-11-16 14:36:21 +0100
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2013-11-16 14:36:21 +0100
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2013-11-16 14:36:21 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-11-16 14:36:21 +0100
+
+
+Started GET "/assets/topics.css?body=1" for 127.0.0.1 at 2013-11-16 14:36:21 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-16 14:36:21 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-16 14:36:21 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-16 14:36:21 +0100
+
+
+Started GET "/assets/answers.js?body=1" for 127.0.0.1 at 2013-11-16 14:36:21 +0100
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2013-11-16 14:36:21 +0100
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2013-11-16 14:36:21 +0100
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-11-16 14:36:21 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-16 14:36:21 +0100
+
+
+Started GET "/topics/1" for 127.0.0.1 at 2013-11-16 14:36:22 +0100
+Processing by TopicsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTopic Load (0.0ms)[0m  [1mSELECT "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered topics/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 36ms (Views: 13.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-16 14:36:22 +0100
+
+
+Started GET "/assets/answers.css?body=1" for 127.0.0.1 at 2013-11-16 14:36:22 +0100
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2013-11-16 14:36:22 +0100
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2013-11-16 14:36:22 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-11-16 14:36:22 +0100
+
+
+Started GET "/assets/topics.css?body=1" for 127.0.0.1 at 2013-11-16 14:36:22 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-16 14:36:22 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-16 14:36:23 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-16 14:36:23 +0100
+
+
+Started GET "/assets/answers.js?body=1" for 127.0.0.1 at 2013-11-16 14:36:23 +0100
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2013-11-16 14:36:23 +0100
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2013-11-16 14:36:23 +0100
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-11-16 14:36:23 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-16 14:36:23 +0100
+
+
+Started GET "/topics" for 127.0.0.1 at 2013-11-16 14:36:24 +0100
+Processing by TopicsController#index as HTML
+  [1m[35mCourse Load (0.0ms)[0m  SELECT "courses".* FROM "courses" WHERE "courses"."id" = 1 LIMIT 1
+  [1m[36mTopic Load (0.0ms)[0m  [1mSELECT "topics".* FROM "topics" WHERE "topics"."course_id" = ?[0m  [["course_id", 1]]
+  Rendered topics/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 26ms (Views: 23.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-16 14:36:24 +0100
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2013-11-16 14:36:24 +0100
+
+
+Started GET "/assets/answers.css?body=1" for 127.0.0.1 at 2013-11-16 14:36:24 +0100
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2013-11-16 14:36:24 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-11-16 14:36:24 +0100
+
+
+Started GET "/assets/topics.css?body=1" for 127.0.0.1 at 2013-11-16 14:36:24 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-16 14:36:24 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-16 14:36:24 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-16 14:36:24 +0100
+
+
+Started GET "/assets/answers.js?body=1" for 127.0.0.1 at 2013-11-16 14:36:24 +0100
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2013-11-16 14:36:25 +0100
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2013-11-16 14:36:25 +0100
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-11-16 14:36:25 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-16 14:36:25 +0100
+
+
+Started GET "/topics/1/edit" for 127.0.0.1 at 2013-11-16 14:36:26 +0100
+Processing by TopicsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mTopic Load (0.0ms)[0m  SELECT "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered topics/_form.html.erb (5.0ms)
+  Rendered topics/edit.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 29ms (Views: 26.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-16 14:36:26 +0100
+
+
+Started GET "/assets/answers.css?body=1" for 127.0.0.1 at 2013-11-16 14:36:26 +0100
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2013-11-16 14:36:26 +0100
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2013-11-16 14:36:26 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-11-16 14:36:26 +0100
+
+
+Started GET "/assets/topics.css?body=1" for 127.0.0.1 at 2013-11-16 14:36:26 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-16 14:36:26 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-16 14:36:26 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-16 14:36:26 +0100
+
+
+Started GET "/assets/answers.js?body=1" for 127.0.0.1 at 2013-11-16 14:36:26 +0100
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2013-11-16 14:36:26 +0100
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2013-11-16 14:36:26 +0100
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-11-16 14:36:26 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-16 14:36:26 +0100
+
+
+Started PATCH "/topics/1" for 127.0.0.1 at 2013-11-16 14:36:27 +0100
+Processing by TopicsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JIuWkKFnXSXh5AWgDBUCLjl+0HZosKPtr99YTW66j0c=", "topic"=>{"name"=>"neues thema", "description"=>"beschreibung"}, "commit"=>"Update Topic", "id"=>"1"}
+  [1m[36mTopic Load (1.0ms)[0m  [1mSELECT "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mCourse Load (0.0ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE "courses"."id" = 1 LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/topics/1
+Completed 302 Found in 9ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/topics/1" for 127.0.0.1 at 2013-11-16 14:36:27 +0100
+Processing by TopicsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mTopic Load (0.0ms)[0m  SELECT "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered topics/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 11ms (Views: 8.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-16 14:36:27 +0100
+
+
+Started GET "/assets/answers.css?body=1" for 127.0.0.1 at 2013-11-16 14:36:28 +0100
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2013-11-16 14:36:28 +0100
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2013-11-16 14:36:28 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-11-16 14:36:28 +0100
+
+
+Started GET "/assets/topics.css?body=1" for 127.0.0.1 at 2013-11-16 14:36:28 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-16 14:36:28 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-16 14:36:28 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-16 14:36:28 +0100
+
+
+Started GET "/assets/answers.js?body=1" for 127.0.0.1 at 2013-11-16 14:36:28 +0100
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2013-11-16 14:36:28 +0100
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2013-11-16 14:36:28 +0100
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-11-16 14:36:28 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-16 14:36:28 +0100
+
+
+Started GET "/topics" for 127.0.0.1 at 2013-11-16 14:36:30 +0100
+Processing by TopicsController#index as HTML
+  [1m[36mCourse Load (0.0ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE "courses"."id" = 1 LIMIT 1[0m
+  [1m[35mTopic Load (0.0ms)[0m  SELECT "topics".* FROM "topics" WHERE "topics"."course_id" = ?  [["course_id", 1]]
+  Rendered topics/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 27ms (Views: 22.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-16 14:36:31 +0100
+
+
+Started GET "/assets/answers.css?body=1" for 127.0.0.1 at 2013-11-16 14:36:31 +0100
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2013-11-16 14:36:31 +0100
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2013-11-16 14:36:31 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-11-16 14:36:31 +0100
+
+
+Started GET "/assets/topics.css?body=1" for 127.0.0.1 at 2013-11-16 14:36:31 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-16 14:36:31 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-16 14:36:31 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-16 14:36:31 +0100
+
+
+Started GET "/assets/answers.js?body=1" for 127.0.0.1 at 2013-11-16 14:36:31 +0100
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2013-11-16 14:36:31 +0100
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2013-11-16 14:36:31 +0100
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-11-16 14:36:31 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-16 14:36:31 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-16 14:36:34 +0100
+
+
+Started GET "/assets/answers.css?body=1" for 127.0.0.1 at 2013-11-16 14:36:34 +0100
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2013-11-16 14:36:34 +0100
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2013-11-16 14:36:34 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-11-16 14:36:34 +0100
+
+
+Started GET "/assets/topics.css?body=1" for 127.0.0.1 at 2013-11-16 14:36:34 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-16 14:36:34 +0100
+
+
+Started GET "/assets/answers.css?body=1" for 127.0.0.1 at 2013-11-16 14:36:34 +0100
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2013-11-16 14:36:34 +0100
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2013-11-16 14:36:34 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-11-16 14:36:34 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-16 14:36:34 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-16 14:36:34 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-16 14:36:35 +0100
+
+
+Started GET "/assets/answers.js?body=1" for 127.0.0.1 at 2013-11-16 14:36:35 +0100
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2013-11-16 14:36:35 +0100
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2013-11-16 14:36:35 +0100
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-11-16 14:36:35 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-16 14:36:35 +0100
+
+
+Started GET "/topics" for 127.0.0.1 at 2013-11-16 14:36:36 +0100
+Processing by TopicsController#index as HTML
+  [1m[36mCourse Load (1.0ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE "courses"."id" = 1 LIMIT 1[0m
+  [1m[35mTopic Load (0.0ms)[0m  SELECT "topics".* FROM "topics" WHERE "topics"."course_id" = ?  [["course_id", 1]]
+  Rendered topics/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 15ms (Views: 13.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-16 14:36:36 +0100
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2013-11-16 14:36:36 +0100
+
+
+Started GET "/assets/answers.css?body=1" for 127.0.0.1 at 2013-11-16 14:36:36 +0100
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2013-11-16 14:36:36 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-11-16 14:36:36 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-16 14:36:36 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-16 14:36:36 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-16 14:36:36 +0100
+
+
+Started GET "/assets/answers.js?body=1" for 127.0.0.1 at 2013-11-16 14:36:36 +0100
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2013-11-16 14:36:36 +0100
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2013-11-16 14:36:36 +0100
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-11-16 14:36:36 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-16 14:36:36 +0100
+
+
+Started GET "/topics/select/1" for 127.0.0.1 at 2013-11-16 14:36:43 +0100
+Processing by TopicsController#select as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTopic Load (1.0ms)[0m  [1mSELECT "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Redirected to http://localhost:3000/questions
+Completed 302 Found in 3ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2013-11-16 14:36:43 +0100
+Processing by QuestionsController#index as HTML
+  [1m[35mTopic Load (0.0ms)[0m  SELECT "topics".* FROM "topics" WHERE "topics"."id" = 1 LIMIT 1
+  [1m[36mQuestion Load (0.0ms)[0m  [1mSELECT "questions".* FROM "questions" WHERE "questions"."topic_id" = ?[0m  [["topic_id", 1]]
+  Rendered questions/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 14ms (Views: 12.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-16 14:36:43 +0100
+
+
+Started GET "/assets/answers.css?body=1" for 127.0.0.1 at 2013-11-16 14:36:43 +0100
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2013-11-16 14:36:43 +0100
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2013-11-16 14:36:43 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-11-16 14:36:43 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-16 14:36:43 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-16 14:36:43 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-16 14:36:44 +0100
+
+
+Started GET "/assets/answers.js?body=1" for 127.0.0.1 at 2013-11-16 14:36:44 +0100
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2013-11-16 14:36:44 +0100
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2013-11-16 14:36:44 +0100
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-11-16 14:36:44 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-16 14:36:44 +0100
+
+
+Started GET "/questions/select/2" for 127.0.0.1 at 2013-11-16 14:36:45 +0100
+Processing by QuestionsController#select as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mQuestion Load (1.0ms)[0m  SELECT "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT 1  [["id", "2"]]
+Redirected to http://localhost:3000/answers
+Completed 302 Found in 3ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/answers" for 127.0.0.1 at 2013-11-16 14:36:46 +0100
+Processing by AnswersController#index as HTML
+  [1m[36mQuestion Load (0.0ms)[0m  [1mSELECT "questions".* FROM "questions" WHERE "questions"."id" = 2 LIMIT 1[0m
+  [1m[35mAnswer Load (0.0ms)[0m  SELECT "answers".* FROM "answers" WHERE "answers"."question_id" = ?  [["question_id", 2]]
+  Rendered answers/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 26ms (Views: 18.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-16 14:36:46 +0100
+
+
+Started GET "/assets/answers.css?body=1" for 127.0.0.1 at 2013-11-16 14:36:46 +0100
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2013-11-16 14:36:46 +0100
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2013-11-16 14:36:46 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-11-16 14:36:46 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-16 14:36:46 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-16 14:36:46 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-16 14:36:46 +0100
+
+
+Started GET "/assets/answers.js?body=1" for 127.0.0.1 at 2013-11-16 14:36:46 +0100
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2013-11-16 14:36:46 +0100
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2013-11-16 14:36:46 +0100
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-11-16 14:36:46 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-16 14:36:46 +0100
+
+
+Started GET "/answers/new" for 127.0.0.1 at 2013-11-16 14:36:51 +0100
+Processing by AnswersController#new as HTML
+  Rendered answers/_form.html.erb (7.0ms)
+  Rendered answers/new.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 17ms (Views: 17.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-16 14:36:51 +0100
+
+
+Started GET "/assets/answers.css?body=1" for 127.0.0.1 at 2013-11-16 14:36:51 +0100
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2013-11-16 14:36:51 +0100
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2013-11-16 14:36:51 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-11-16 14:36:51 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-16 14:36:51 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-16 14:36:51 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-16 14:36:51 +0100
+
+
+Started GET "/assets/answers.js?body=1" for 127.0.0.1 at 2013-11-16 14:36:51 +0100
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2013-11-16 14:36:51 +0100
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2013-11-16 14:36:51 +0100
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-11-16 14:36:51 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-16 14:36:51 +0100
+
+
+Started POST "/answers" for 127.0.0.1 at 2013-11-16 14:36:53 +0100
+Processing by AnswersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JIuWkKFnXSXh5AWgDBUCLjl+0HZosKPtr99YTW66j0c=", "answer"=>{"notice"=>"", "body"=>"", "correct"=>"0", "pattern"=>""}, "commit"=>"Create Answer"}
+  [1m[36mQuestion Load (1.0ms)[0m  [1mSELECT "questions".* FROM "questions" WHERE "questions"."id" = 2 LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (1.6ms)[0m  [1mINSERT INTO "answers" ("body", "correct", "created_at", "notice", "pattern", "question_id", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["body", ""], ["correct", false], ["created_at", Sat, 16 Nov 2013 13:36:53 UTC +00:00], ["notice", ""], ["pattern", ""], ["question_id", 2], ["updated_at", Sat, 16 Nov 2013 13:36:53 UTC +00:00]]
+  [1m[35m (11.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/answers/3
+Completed 302 Found in 24ms (ActiveRecord: 13.6ms)
+
+
+Started GET "/answers/3" for 127.0.0.1 at 2013-11-16 14:36:53 +0100
+Processing by AnswersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mAnswer Load (1.0ms)[0m  [1mSELECT "answers".* FROM "answers" WHERE "answers"."id" = ? LIMIT 1[0m  [["id", "3"]]
+  Rendered answers/show.html.erb within layouts/application (2.0ms)
+Completed 500 Internal Server Error in 28ms
+
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+     9: </head>
+    10: <body>
+    11:   <%= breadcrumbs pretext: "You are here: ",
+    12:                 separator: " &rsaquo; " %>
+    13: <%= yield %>
+    14: 
+    15: </body>
+  config/breadcrumbs.rb:11:in `block (2 levels) in load_breadcrumbs'
+  app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb___911213145_27580152'
+
+
+  Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (17.0ms)
+
+
+Started GET "/answers/3" for 127.0.0.1 at 2013-11-16 14:37:20 +0100
+Processing by AnswersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mAnswer Load (0.0ms)[0m  SELECT "answers".* FROM "answers" WHERE "answers"."id" = ? LIMIT 1  [["id", "3"]]
+  Rendered answers/show.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 16ms
+
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+     7:   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+     8:   <%= csrf_meta_tags %>
+     9:   <%= breadcrumbs pretext: "You are here: ",
+    10:                 separator: " &rsaquo; " %>
+    11: </head>
+    12: <body>
+    13: 
+  config/breadcrumbs.rb:11:in `block (2 levels) in load_breadcrumbs'
+  app/views/layouts/application.html.erb:10:in `_app_views_layouts_application_html_erb___911213145_34182564'
+
+
+  Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (17.0ms)
+
+
+Started GET "/answers/3" for 127.0.0.1 at 2013-11-16 14:37:21 +0100
+Processing by AnswersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mAnswer Load (1.0ms)[0m  [1mSELECT "answers".* FROM "answers" WHERE "answers"."id" = ? LIMIT 1[0m  [["id", "3"]]
+  Rendered answers/show.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 18ms
+
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+     7:   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+     8:   <%= csrf_meta_tags %>
+     9:   <%= breadcrumbs pretext: "You are here: ",
+    10:                 separator: " &rsaquo; " %>
+    11: </head>
+    12: <body>
+    13: 
+  config/breadcrumbs.rb:11:in `block (2 levels) in load_breadcrumbs'
+  app/views/layouts/application.html.erb:10:in `_app_views_layouts_application_html_erb___911213145_34182564'
+
+
+  Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (30.0ms)
+
+
+Started GET "/answers/3" for 127.0.0.1 at 2013-11-16 14:38:09 +0100
+Processing by AnswersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mAnswer Load (0.0ms)[0m  SELECT "answers".* FROM "answers" WHERE "answers"."id" = ? LIMIT 1  [["id", "3"]]
+  Rendered answers/show.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 12ms
+
+ActionView::Template::Error (undefined method `title' for nil:NilClass):
+     7:   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+     8:   <%= csrf_meta_tags %>
+     9:   <%= breadcrumbs pretext: "You are here: ",
+    10:                 separator: " &rsaquo; " %>
+    11: </head>
+    12: <body>
+    13: 
+  config/breadcrumbs.rb:11:in `block (2 levels) in load_breadcrumbs'
+  app/views/layouts/application.html.erb:10:in `_app_views_layouts_application_html_erb___911213145_34182564'
+
+
+  Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.0ms)
+  Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (17.0ms)
+
+
+Started GET "/answers/3" for 127.0.0.1 at 2013-11-16 14:38:56 +0100
+Processing by AnswersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mAnswer Load (0.0ms)[0m  [1mSELECT "answers".* FROM "answers" WHERE "answers"."id" = ? LIMIT 1[0m  [["id", "3"]]
+  Rendered answers/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 12ms (Views: 9.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/topics.css?body=1" for 127.0.0.1 at 2013-11-16 14:38:56 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-16 14:38:56 +0100
+
+
+Started GET "/assets/answers.css?body=1" for 127.0.0.1 at 2013-11-16 14:38:56 +0100
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2013-11-16 14:38:56 +0100
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2013-11-16 14:38:56 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-11-16 14:38:56 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-16 14:38:56 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-16 14:38:56 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-16 14:38:56 +0100
+
+
+Started GET "/assets/answers.js?body=1" for 127.0.0.1 at 2013-11-16 14:38:56 +0100
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2013-11-16 14:38:56 +0100
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2013-11-16 14:38:57 +0100
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-11-16 14:38:57 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-16 14:38:57 +0100
+
+
+Started GET "/topics" for 127.0.0.1 at 2013-11-16 14:39:05 +0100
+Processing by TopicsController#index as HTML
+  [1m[35mCourse Load (1.0ms)[0m  SELECT "courses".* FROM "courses" WHERE "courses"."id" = 1 LIMIT 1
+  [1m[36mTopic Load (1.0ms)[0m  [1mSELECT "topics".* FROM "topics" WHERE "topics"."course_id" = ?[0m  [["course_id", 1]]
+  Rendered topics/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 20ms (Views: 14.9ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-16 14:39:05 +0100
+
+
+Started GET "/assets/answers.css?body=1" for 127.0.0.1 at 2013-11-16 14:39:05 +0100
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2013-11-16 14:39:05 +0100
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2013-11-16 14:39:05 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-11-16 14:39:05 +0100
+
+
+Started GET "/assets/topics.css?body=1" for 127.0.0.1 at 2013-11-16 14:39:05 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-16 14:39:05 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-16 14:39:05 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-16 14:39:05 +0100
+
+
+Started GET "/assets/answers.js?body=1" for 127.0.0.1 at 2013-11-16 14:39:05 +0100
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2013-11-16 14:39:05 +0100
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2013-11-16 14:39:05 +0100
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-11-16 14:39:05 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-16 14:39:05 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-16 14:39:07 +0100
+
+
+Started GET "/assets/answers.css?body=1" for 127.0.0.1 at 2013-11-16 14:39:07 +0100
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2013-11-16 14:39:07 +0100
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2013-11-16 14:39:07 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-11-16 14:39:07 +0100
+
+
+Started GET "/assets/topics.css?body=1" for 127.0.0.1 at 2013-11-16 14:39:07 +0100
+
+
+Started GET "/answers/3" for 127.0.0.1 at 2013-11-16 14:39:07 +0100
+Processing by AnswersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mAnswer Load (0.0ms)[0m  SELECT "answers".* FROM "answers" WHERE "answers"."id" = ? LIMIT 1  [["id", "3"]]
+  Rendered answers/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 18ms (Views: 15.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-16 14:39:07 +0100
+
+
+Started GET "/assets/answers.css?body=1" for 127.0.0.1 at 2013-11-16 14:39:08 +0100
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2013-11-16 14:39:08 +0100
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2013-11-16 14:39:08 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-11-16 14:39:08 +0100
+
+
+Started GET "/assets/topics.css?body=1" for 127.0.0.1 at 2013-11-16 14:39:08 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-16 14:39:08 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-16 14:39:08 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-16 14:39:08 +0100
+
+
+Started GET "/assets/answers.js?body=1" for 127.0.0.1 at 2013-11-16 14:39:08 +0100
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2013-11-16 14:39:08 +0100
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2013-11-16 14:39:08 +0100
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-11-16 14:39:08 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-16 14:39:08 +0100
+
+
+Started GET "/topics" for 127.0.0.1 at 2013-11-16 14:39:15 +0100
+Processing by TopicsController#index as HTML
+  [1m[36mCourse Load (1.0ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE "courses"."id" = 1 LIMIT 1[0m
+  [1m[35mTopic Load (0.0ms)[0m  SELECT "topics".* FROM "topics" WHERE "topics"."course_id" = ?  [["course_id", 1]]
+  Rendered topics/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 15ms (Views: 11.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-16 14:39:15 +0100
+
+
+Started GET "/assets/answers.css?body=1" for 127.0.0.1 at 2013-11-16 14:39:16 +0100
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2013-11-16 14:39:16 +0100
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2013-11-16 14:39:16 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-11-16 14:39:16 +0100
+
+
+Started GET "/assets/topics.css?body=1" for 127.0.0.1 at 2013-11-16 14:39:16 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-16 14:39:16 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-16 14:39:16 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-16 14:39:16 +0100
+
+
+Started GET "/assets/answers.js?body=1" for 127.0.0.1 at 2013-11-16 14:39:16 +0100
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2013-11-16 14:39:16 +0100
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2013-11-16 14:39:16 +0100
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-11-16 14:39:16 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-16 14:39:16 +0100
+
+
+Started GET "/topics/select/1" for 127.0.0.1 at 2013-11-16 14:42:22 +0100
+Processing by TopicsController#select as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTopic Load (0.0ms)[0m  [1mSELECT "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Redirected to http://localhost:3000/questions
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2013-11-16 14:42:22 +0100
+Processing by QuestionsController#index as HTML
+  [1m[35mTopic Load (1.0ms)[0m  SELECT "topics".* FROM "topics" WHERE "topics"."id" = 1 LIMIT 1
+  [1m[36mQuestion Load (0.0ms)[0m  [1mSELECT "questions".* FROM "questions" WHERE "questions"."topic_id" = ?[0m  [["topic_id", 1]]
+  Rendered questions/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 15ms (Views: 14.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-16 14:42:22 +0100
+
+
+Started GET "/assets/answers.css?body=1" for 127.0.0.1 at 2013-11-16 14:42:22 +0100
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2013-11-16 14:42:22 +0100
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2013-11-16 14:42:22 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-11-16 14:42:22 +0100
+
+
+Started GET "/assets/topics.css?body=1" for 127.0.0.1 at 2013-11-16 14:42:22 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-16 14:42:22 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-16 14:42:23 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-16 14:42:23 +0100
+
+
+Started GET "/assets/answers.js?body=1" for 127.0.0.1 at 2013-11-16 14:42:23 +0100
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2013-11-16 14:42:23 +0100
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2013-11-16 14:42:23 +0100
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-11-16 14:42:23 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-16 14:42:23 +0100
+
+
+Started GET "/questions/select/2" for 127.0.0.1 at 2013-11-16 14:42:24 +0100
+Processing by QuestionsController#select as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mQuestion Load (1.0ms)[0m  SELECT "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT 1  [["id", "2"]]
+Redirected to http://localhost:3000/answers
+Completed 302 Found in 4ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/answers" for 127.0.0.1 at 2013-11-16 14:42:24 +0100
+Processing by AnswersController#index as HTML
+  [1m[36mQuestion Load (1.0ms)[0m  [1mSELECT "questions".* FROM "questions" WHERE "questions"."id" = 2 LIMIT 1[0m
+  [1m[35mAnswer Load (0.0ms)[0m  SELECT "answers".* FROM "answers" WHERE "answers"."question_id" = ?  [["question_id", 2]]
+  Rendered answers/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 14ms (Views: 10.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-16 14:42:24 +0100
+
+
+Started GET "/assets/answers.css?body=1" for 127.0.0.1 at 2013-11-16 14:42:24 +0100
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2013-11-16 14:42:25 +0100
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2013-11-16 14:42:25 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-11-16 14:42:25 +0100
+
+
+Started GET "/assets/topics.css?body=1" for 127.0.0.1 at 2013-11-16 14:42:25 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-16 14:42:25 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-16 14:42:25 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-16 14:42:25 +0100
+
+
+Started GET "/assets/answers.js?body=1" for 127.0.0.1 at 2013-11-16 14:42:25 +0100
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2013-11-16 14:42:25 +0100
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2013-11-16 14:42:25 +0100
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-11-16 14:42:25 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-16 14:42:25 +0100
+
+
+Started GET "/answers/2" for 127.0.0.1 at 2013-11-16 14:42:28 +0100
+Processing by AnswersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mAnswer Load (0.0ms)[0m  [1mSELECT "answers".* FROM "answers" WHERE "answers"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  Rendered answers/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 13ms (Views: 11.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-16 14:42:28 +0100
+
+
+Started GET "/assets/answers.css?body=1" for 127.0.0.1 at 2013-11-16 14:42:28 +0100
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2013-11-16 14:42:28 +0100
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2013-11-16 14:42:28 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-11-16 14:42:28 +0100
+
+
+Started GET "/assets/topics.css?body=1" for 127.0.0.1 at 2013-11-16 14:42:28 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-16 14:42:28 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-16 14:42:28 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-16 14:42:28 +0100
+
+
+Started GET "/assets/answers.js?body=1" for 127.0.0.1 at 2013-11-16 14:42:28 +0100
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2013-11-16 14:42:28 +0100
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2013-11-16 14:42:28 +0100
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-11-16 14:42:28 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-16 14:42:28 +0100
+
+
+Started GET "/answers" for 127.0.0.1 at 2013-11-16 14:42:36 +0100
+Processing by AnswersController#index as HTML
+  [1m[35mQuestion Load (1.0ms)[0m  SELECT "questions".* FROM "questions" WHERE "questions"."id" = 2 LIMIT 1
+  [1m[36mAnswer Load (0.0ms)[0m  [1mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = ?[0m  [["question_id", 2]]
+  Rendered answers/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 19ms (Views: 16.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-16 14:42:36 +0100
+
+
+Started GET "/assets/answers.css?body=1" for 127.0.0.1 at 2013-11-16 14:42:36 +0100
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2013-11-16 14:42:36 +0100
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2013-11-16 14:42:36 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-11-16 14:42:36 +0100
+
+
+Started GET "/assets/topics.css?body=1" for 127.0.0.1 at 2013-11-16 14:42:36 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-16 14:42:37 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-16 14:42:37 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-16 14:42:37 +0100
+
+
+Started GET "/assets/answers.js?body=1" for 127.0.0.1 at 2013-11-16 14:42:37 +0100
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2013-11-16 14:42:37 +0100
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2013-11-16 14:42:37 +0100
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-11-16 14:42:37 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-16 14:42:37 +0100
+
+
+Started GET "/answers/new" for 127.0.0.1 at 2013-11-16 14:42:43 +0100
+Processing by AnswersController#new as HTML
+  Rendered answers/_form.html.erb (6.0ms)
+  Rendered answers/new.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 29ms (Views: 28.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-16 14:42:43 +0100
+
+
+Started GET "/assets/answers.css?body=1" for 127.0.0.1 at 2013-11-16 14:42:43 +0100
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2013-11-16 14:42:43 +0100
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2013-11-16 14:42:43 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-11-16 14:42:43 +0100
+
+
+Started GET "/assets/topics.css?body=1" for 127.0.0.1 at 2013-11-16 14:42:43 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-16 14:42:43 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-16 14:42:43 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-16 14:42:43 +0100
+
+
+Started GET "/assets/answers.js?body=1" for 127.0.0.1 at 2013-11-16 14:42:43 +0100
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2013-11-16 14:42:44 +0100
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2013-11-16 14:42:44 +0100
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-11-16 14:42:44 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-16 14:42:44 +0100
