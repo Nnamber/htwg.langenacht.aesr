@@ -31,7 +31,7 @@ ActiveRecord::Schema.define(version: 20131114145245) do
   end
 
   create_table "questions", force: true do |t|
-    t.string   "type"
+    t.string   "questiontype"
     t.string   "name"
     t.string   "body"
     t.string   "noticewrong"

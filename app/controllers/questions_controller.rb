@@ -12,7 +12,7 @@ class QuestionsController < ApplicationController
   def index
     # @questions = Question.all
     @currenttopic = Topic.find_by_id(session[:topic_id])
-    @questions = @currenttopic.question
+    @questions = @currenttopic.questions
 
     respond_to do |format|
       format.html
@@ -37,7 +37,7 @@ class QuestionsController < ApplicationController
   # POST /questions
   # POST /questions.json
   def create
-    @question = Question.new(params[:question_id])
+    @question = Question.new(question_params)
     @currenttopic = Topic.find_by_id(session[:topic_id])
     @question.topic_id = @currenttopic.id
 
@@ -89,6 +89,6 @@ class QuestionsController < ApplicationController
 
   # Never trust parameters from the scary internet, only allow the white list through.
   def question_params
-    params.require(:question).permit(:type, :name, :body, :noticewrong, :noticeright, :notice, :topic_id)
+    params.require(:question).permit(:questiontype, :name, :body, :noticewrong, :noticeright, :notice, :topic_id)
   end
 end

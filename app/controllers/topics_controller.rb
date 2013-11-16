@@ -37,9 +37,10 @@ class TopicsController < ApplicationController
   # POST /topics
   # POST /topics.json
   def create
-    @topic = Topic.new(params[:topic])
+    @topic = Topic.new(topic_params)
     @currentcourse = Course.find_by_id(session[:course_id])
     @topic.course_id = @currentcourse.id
+   
 
     respond_to do |format|
       if @topic.save

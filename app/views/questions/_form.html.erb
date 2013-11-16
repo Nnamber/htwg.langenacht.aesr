@@ -12,8 +12,8 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :type %><br>
-    <%= f.select :type, [['Multiple-Choice-Frage', 'multiplechoice'],['Single-Choice-Frage','singlechoice'],['Offene Frage','openquestion'],['Lückentext','clozetext']] %>
+    <%= f.label :questiontype %><br>
+    <%= f.select :questiontype, [['Multiple-Choice-Frage', 'multiplechoice'],['Single-Choice-Frage','singlechoice'],['Offene Frage','openquestion'],['Lückentext','clozetext']] %>
   </div>
   <div class="field">
     <%= f.label :name %><br>
@@ -35,10 +35,10 @@
     <%= f.label :notice %><br>
     <%= f.text_field :notice %>
   </div>
-  <div class="field">
+  <!-- <div class="field">
     <%= f.label :topic_id %><br>
     <%= f.number_field :topic_id %>
-  </div>
+  </div> -->
   <div class="actions">
     <%= f.submit %>
   </div>

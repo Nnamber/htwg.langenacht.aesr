@@ -9,7 +9,7 @@
 			<th>Noticewrong</th>
 			<th>Noticeright</th>
 			<th>Notice</th>
-			<th>Topic</th>
+			<!-- <th>Topic</th> -->
 			<th>Fragen</th>
 			<th></th>
 			<th></th>
@@ -20,13 +20,13 @@
 	<tbody>
 		<% @questions.each do |question| %>
 		<tr>
-			<td><%= question.type %></td>
+			<td><%= question.questiontype %></td>
 			<td><%= question.name %></td>
 			<td><%= question.body %></td>
 			<td><%= question.noticewrong %></td>
 			<td><%= question.noticeright %></td>
 			<td><%= question.notice %></td>
-			<td><%= question.topic_id %></td>
+			<!-- <td><%= question.topic_id %></td> -->
 			<td><%= link_to 'auswählen', select_question_path(question) %></td>
 			<td><%= link_to 'Show', question %></td>
 			<td><%= link_to 'Edit', edit_question_path(question) %></td>

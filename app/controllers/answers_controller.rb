@@ -6,7 +6,7 @@ class AnswersController < ApplicationController
   def index
     # @answers = Answer.all
     @currentquestion = Question.find_by_id(session[:question_id])
-    @answers = @currentquestion.answer
+    @answers = @currentquestion.answers
   end
 
   # GET /answers/1
@@ -26,7 +26,7 @@ class AnswersController < ApplicationController
   # POST /answers
   # POST /answers.json
   def create
-    @answer = Answer.new(params[:question_id])
+    @answer = Answer.new(answer_params)
     @currentquestion = Question.find_by_id(session[:question_id])
     @answer.question_id = @currentquestion.id
 

@@ -1,7 +1,7 @@
 class CreateQuestions < ActiveRecord::Migration
   def change
     create_table :questions do |t|
-      t.string :type
+      t.string :questiontype
       t.string :name
       t.string :body
       t.string :noticewrong

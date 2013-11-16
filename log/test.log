@@ -1,0 +1,344 @@
+  [1m[36m (14.5ms)[0m  [1mCREATE TABLE "answers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "notice" varchar(255), "body" varchar(255), "correct" boolean, "pattern" varchar(255), "question_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (7.0ms)[0m  CREATE TABLE "courses" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "topic" varchar(255), "description" varchar(255), "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (7.1ms)[0m  [1mCREATE TABLE "questions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "type" varchar(255), "name" varchar(255), "body" varchar(255), "noticewrong" varchar(255), "noticeright" varchar(255), "notice" varchar(255), "topic_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (7.4ms)[0m  CREATE TABLE "topics" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "description" varchar(255), "course_id" integer, "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (8.9ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (11.0ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (1.0ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (10.2ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20131114145245')
+  [1m[36m (11.0ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20131114124320')[0m
+  [1m[35m (15.6ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20131114124433')
+  [1m[36m (10.4ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20131114133027')[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.0ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mFixture Delete (1.0ms)[0m  [1mDELETE FROM "answers"[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "answers" ("notice", "body", "correct", "pattern", "question_id", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'f', 'MyString', 1, '2013-11-16 10:21:50', '2013-11-16 10:21:50', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "answers" ("notice", "body", "correct", "pattern", "question_id", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'f', 'MyString', 1, '2013-11-16 10:21:50', '2013-11-16 10:21:50', 298486374)[0m
+  [1m[35mFixture Delete (0.0ms)[0m  DELETE FROM "courses"
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "courses" ("topic", "description", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2013-11-16 10:21:50', '2013-11-16 10:21:50', 980190962)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "courses" ("topic", "description", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2013-11-16 10:21:50', '2013-11-16 10:21:50', 298486374)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "questions"[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "questions" ("type", "name", "body", "noticewrong", "noticeright", "notice", "topic_id", "created_at", "updated_at", "id") VALUES (NULL, 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', 1, '2013-11-16 10:21:50', '2013-11-16 10:21:50', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "questions" ("type", "name", "body", "noticewrong", "noticeright", "notice", "topic_id", "created_at", "updated_at", "id") VALUES (NULL, 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', 1, '2013-11-16 10:21:50', '2013-11-16 10:21:50', 298486374)[0m
+  [1m[35mFixture Delete (0.0ms)[0m  DELETE FROM "topics"
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "topics" ("name", "description", "course_id", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 1, '2013-11-16 10:21:50', '2013-11-16 10:21:50', 980190962)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "topics" ("name", "description", "course_id", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 1, '2013-11-16 10:21:50', '2013-11-16 10:21:50', 298486374)
+  [1m[36m (6.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+------------------------------------------------
+AnswersControllerTest: test_should_create_answer
+------------------------------------------------
+  [1m[36mAnswer Load (1.0ms)[0m  [1mSELECT "answers".* FROM "answers" WHERE "answers"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "answers"
+Processing by AnswersController#create as HTML
+  Parameters: {"answer"=>{"body"=>"MyString", "correct"=>false, "notice"=>"MyString", "pattern"=>"MyString", "question_id"=>"1"}}
+  [1m[36mQuestion Load (0.0ms)[0m  [1mSELECT "questions".* FROM "questions" WHERE "questions"."id" IS NULL LIMIT 1[0m
+Completed 500 Internal Server Error in 5ms
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+-------------------------------------------------
+AnswersControllerTest: test_should_destroy_answer
+-------------------------------------------------
+  [1m[35mAnswer Load (0.0ms)[0m  SELECT "answers".* FROM "answers" WHERE "answers"."id" = ? LIMIT 1  [["id", 980190962]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "answers"[0m
+Processing by AnswersController#destroy as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[35mAnswer Load (0.0ms)[0m  SELECT "answers".* FROM "answers" WHERE "answers"."id" = ? LIMIT 1  [["id", "980190962"]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.0ms)[0m  DELETE FROM "answers" WHERE "answers"."id" = ?  [["id", 980190962]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/answers
+Completed 302 Found in 2ms (ActiveRecord: 1.0ms)
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "answers"
+  [1m[36m (1.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+-------------------------------------------
+AnswersControllerTest: test_should_get_edit
+-------------------------------------------
+  [1m[36mAnswer Load (0.0ms)[0m  [1mSELECT "answers".* FROM "answers" WHERE "answers"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+Processing by AnswersController#edit as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[35mAnswer Load (0.0ms)[0m  SELECT "answers".* FROM "answers" WHERE "answers"."id" = ? LIMIT 1  [["id", "980190962"]]
+  Rendered answers/_form.html.erb (29.0ms)
+Completed 200 OK in 2556ms (Views: 2556.4ms | ActiveRecord: 0.0ms)
+  [1m[36m (1.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+--------------------------------------------
+AnswersControllerTest: test_should_get_index
+--------------------------------------------
+  [1m[36mAnswer Load (0.0ms)[0m  [1mSELECT "answers".* FROM "answers" WHERE "answers"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+Processing by AnswersController#index as HTML
+  [1m[35mQuestion Load (0.0ms)[0m  SELECT "questions".* FROM "questions" WHERE "questions"."id" IS NULL LIMIT 1
+Completed 500 Internal Server Error in 1ms
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+------------------------------------------
+AnswersControllerTest: test_should_get_new
+------------------------------------------
+  [1m[36mAnswer Load (0.0ms)[0m  [1mSELECT "answers".* FROM "answers" WHERE "answers"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+Processing by AnswersController#new as HTML
+  Rendered answers/_form.html.erb (2.0ms)
+Completed 200 OK in 5ms (Views: 5.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+----------------------------------------------
+AnswersControllerTest: test_should_show_answer
+----------------------------------------------
+  [1m[35mAnswer Load (0.0ms)[0m  SELECT "answers".* FROM "answers" WHERE "answers"."id" = ? LIMIT 1  [["id", 980190962]]
+Processing by AnswersController#show as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[36mAnswer Load (0.0ms)[0m  [1mSELECT "answers".* FROM "answers" WHERE "answers"."id" = ? LIMIT 1[0m  [["id", "980190962"]]
+Completed 200 OK in 4ms (Views: 4.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+------------------------------------------------
+AnswersControllerTest: test_should_update_answer
+------------------------------------------------
+  [1m[35mAnswer Load (0.0ms)[0m  SELECT "answers".* FROM "answers" WHERE "answers"."id" = ? LIMIT 1  [["id", 980190962]]
+Processing by AnswersController#update as HTML
+  Parameters: {"answer"=>{"body"=>"MyString", "correct"=>false, "notice"=>"MyString", "pattern"=>"MyString", "question_id"=>"1"}, "id"=>"980190962"}
+  [1m[36mAnswer Load (0.0ms)[0m  [1mSELECT "answers".* FROM "answers" WHERE "answers"."id" = ? LIMIT 1[0m  [["id", "980190962"]]
+  [1m[35mAnswer Load (0.0ms)[0m  SELECT "answers".* FROM "answers" WHERE "answers"."id" = ? LIMIT 1  [["id", "980190962"]]
+  [1m[36mQuestion Load (0.0ms)[0m  [1mSELECT "questions".* FROM "questions" WHERE "questions"."id" IS NULL LIMIT 1[0m
+Completed 500 Internal Server Error in 1ms
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+------------------------------------------------
+CoursesControllerTest: test_should_create_course
+------------------------------------------------
+  [1m[35mCourse Load (0.0ms)[0m  SELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT 1  [["id", 980190962]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "courses"[0m
+Processing by CoursesController#create as HTML
+  Parameters: {"course"=>{"description"=>"MyString", "topic"=>"MyString"}}
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (2.9ms)[0m  [1mINSERT INTO "courses" ("created_at", "description", "topic", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Sat, 16 Nov 2013 10:21:53 UTC +00:00], ["description", "MyString"], ["topic", "MyString"], ["updated_at", Sat, 16 Nov 2013 10:21:53 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/courses/980190963
+Completed 302 Found in 7ms (ActiveRecord: 2.9ms)
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "courses"[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+-------------------------------------------------
+CoursesControllerTest: test_should_destroy_course
+-------------------------------------------------
+  [1m[35mCourse Load (0.0ms)[0m  SELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT 1  [["id", 980190962]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "courses"[0m
+Processing by CoursesController#destroy as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[35mCourse Load (0.0ms)[0m  SELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT 1  [["id", "980190962"]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.0ms)[0m  DELETE FROM "courses" WHERE "courses"."id" = ?  [["id", 980190962]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/courses
+Completed 302 Found in 3ms (ActiveRecord: 1.0ms)
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "courses"
+  [1m[36m (1.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+-------------------------------------------
+CoursesControllerTest: test_should_get_edit
+-------------------------------------------
+  [1m[36mCourse Load (0.0ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+Processing by CoursesController#edit as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[35mCourse Load (0.0ms)[0m  SELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT 1  [["id", "980190962"]]
+  Rendered courses/_form.html.erb (16.0ms)
+Completed 200 OK in 22ms (Views: 21.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+--------------------------------------------
+CoursesControllerTest: test_should_get_index
+--------------------------------------------
+  [1m[36mCourse Load (0.0ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+Processing by CoursesController#index as HTML
+  [1m[35mCourse Load (0.0ms)[0m  SELECT "courses".* FROM "courses"
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+------------------------------------------
+CoursesControllerTest: test_should_get_new
+------------------------------------------
+  [1m[36mCourse Load (0.0ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+Processing by CoursesController#new as HTML
+  Rendered courses/_form.html.erb (1.0ms)
+Completed 200 OK in 5ms (Views: 5.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+----------------------------------------------
+CoursesControllerTest: test_should_show_course
+----------------------------------------------
+  [1m[35mCourse Load (0.0ms)[0m  SELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT 1  [["id", 980190962]]
+Processing by CoursesController#show as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[36mCourse Load (0.0ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT 1[0m  [["id", "980190962"]]
+Completed 200 OK in 4ms (Views: 4.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+------------------------------------------------
+CoursesControllerTest: test_should_update_course
+------------------------------------------------
+  [1m[35mCourse Load (0.0ms)[0m  SELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT 1  [["id", 980190962]]
+Processing by CoursesController#update as HTML
+  Parameters: {"course"=>{"description"=>"MyString", "topic"=>"MyString"}, "id"=>"980190962"}
+  [1m[36mCourse Load (0.0ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT 1[0m  [["id", "980190962"]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/courses/980190962
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+----------------------------------------------------
+QuestionsControllerTest: test_should_create_question
+----------------------------------------------------
+  [1m[35mQuestion Load (0.0ms)[0m  SELECT "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT 1  [["id", 980190962]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "questions"[0m
+Processing by QuestionsController#create as HTML
+  Parameters: {"question"=>{"body"=>"MyString", "name"=>"MyString", "notice"=>"MyString", "noticeright"=>"MyString", "noticewrong"=>"MyString", "topic_id"=>"1", "type"=>nil}}
+  [1m[35mTopic Load (1.0ms)[0m  SELECT "topics".* FROM "topics" WHERE "topics"."id" IS NULL LIMIT 1
+Completed 500 Internal Server Error in 1ms
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+-----------------------------------------------------
+QuestionsControllerTest: test_should_destroy_question
+-----------------------------------------------------
+  [1m[36mQuestion Load (0.0ms)[0m  [1mSELECT "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM "questions"
+Processing by QuestionsController#destroy as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[36mQuestion Load (0.0ms)[0m  [1mSELECT "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT 1[0m  [["id", "980190962"]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.0ms)[0m  [1mDELETE FROM "questions" WHERE "questions"."id" = ?[0m  [["id", 980190962]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/questions
+Completed 302 Found in 2ms (ActiveRecord: 1.0ms)
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "questions"[0m
+  [1m[35m (1.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+---------------------------------------------
+QuestionsControllerTest: test_should_get_edit
+---------------------------------------------
+  [1m[35mQuestion Load (0.0ms)[0m  SELECT "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT 1  [["id", 980190962]]
+Processing by QuestionsController#edit as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[36mQuestion Load (0.0ms)[0m  [1mSELECT "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT 1[0m  [["id", "980190962"]]
+  Rendered questions/_form.html.erb (7.1ms)
+Completed 200 OK in 13ms (Views: 12.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+----------------------------------------------
+QuestionsControllerTest: test_should_get_index
+----------------------------------------------
+  [1m[35mQuestion Load (0.0ms)[0m  SELECT "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT 1  [["id", 980190962]]
+Processing by QuestionsController#index as HTML
+  [1m[36mTopic Load (0.0ms)[0m  [1mSELECT "topics".* FROM "topics" WHERE "topics"."id" IS NULL LIMIT 1[0m
+Completed 500 Internal Server Error in 1ms
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+--------------------------------------------
+QuestionsControllerTest: test_should_get_new
+--------------------------------------------
+  [1m[35mQuestion Load (0.0ms)[0m  SELECT "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT 1  [["id", 980190962]]
+Processing by QuestionsController#new as HTML
+  Rendered questions/_form.html.erb (3.0ms)
+Completed 200 OK in 7ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+--------------------------------------------------
+QuestionsControllerTest: test_should_show_question
+--------------------------------------------------
+  [1m[36mQuestion Load (0.0ms)[0m  [1mSELECT "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[35mQuestion Load (0.0ms)[0m  SELECT "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT 1  [["id", "980190962"]]
+Completed 200 OK in 4ms (Views: 4.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+----------------------------------------------------
+QuestionsControllerTest: test_should_update_question
+----------------------------------------------------
+  [1m[36mQuestion Load (1.0ms)[0m  [1mSELECT "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+Processing by QuestionsController#update as HTML
+  Parameters: {"question"=>{"body"=>"MyString", "name"=>"MyString", "notice"=>"MyString", "noticeright"=>"MyString", "noticewrong"=>"MyString", "topic_id"=>"1", "type"=>nil}, "id"=>"980190962"}
+  [1m[35mQuestion Load (0.0ms)[0m  SELECT "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT 1  [["id", "980190962"]]
+  [1m[36mQuestion Load (0.0ms)[0m  [1mSELECT "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT 1[0m  [["id", "980190962"]]
+  [1m[35mTopic Load (0.0ms)[0m  SELECT "topics".* FROM "topics" WHERE "topics"."id" IS NULL LIMIT 1
+Completed 500 Internal Server Error in 2ms
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+----------------------------------------------
+TopicsControllerTest: test_should_create_topic
+----------------------------------------------
+  [1m[36mTopic Load (1.0ms)[0m  [1mSELECT "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "topics"
+Processing by TopicsController#create as HTML
+  Parameters: {"topic"=>{"course_id"=>"1", "description"=>"MyString", "name"=>"MyString"}}
+  [1m[36mCourse Load (0.0ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE "courses"."id" IS NULL LIMIT 1[0m
+Completed 500 Internal Server Error in 1ms
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+-----------------------------------------------
+TopicsControllerTest: test_should_destroy_topic
+-----------------------------------------------
+  [1m[35mTopic Load (0.0ms)[0m  SELECT "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1  [["id", 980190962]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "topics"[0m
+Processing by TopicsController#destroy as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[35mTopic Load (0.0ms)[0m  SELECT "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1  [["id", "980190962"]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.0ms)[0m  DELETE FROM "topics" WHERE "topics"."id" = ?  [["id", 980190962]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/topics
+Completed 302 Found in 3ms (ActiveRecord: 1.0ms)
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "topics"
+  [1m[36m (1.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+------------------------------------------
+TopicsControllerTest: test_should_get_edit
+------------------------------------------
+  [1m[36mTopic Load (0.0ms)[0m  [1mSELECT "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+Processing by TopicsController#edit as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[35mTopic Load (0.0ms)[0m  SELECT "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1  [["id", "980190962"]]
+  Rendered topics/_form.html.erb (3.0ms)
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+-------------------------------------------
+TopicsControllerTest: test_should_get_index
+-------------------------------------------
+  [1m[36mTopic Load (0.0ms)[0m  [1mSELECT "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+Processing by TopicsController#index as HTML
+  [1m[35mCourse Load (0.0ms)[0m  SELECT "courses".* FROM "courses" WHERE "courses"."id" IS NULL LIMIT 1
+Completed 500 Internal Server Error in 0ms
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+-----------------------------------------
+TopicsControllerTest: test_should_get_new
+-----------------------------------------
+  [1m[36mTopic Load (0.0ms)[0m  [1mSELECT "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+Processing by TopicsController#new as HTML
+  Rendered topics/_form.html.erb (2.0ms)
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+--------------------------------------------
+TopicsControllerTest: test_should_show_topic
+--------------------------------------------
+  [1m[35mTopic Load (1.0ms)[0m  SELECT "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1  [["id", 980190962]]
+Processing by TopicsController#show as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[36mTopic Load (0.0ms)[0m  [1mSELECT "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1[0m  [["id", "980190962"]]
+Completed 200 OK in 16ms (Views: 14.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+----------------------------------------------
+TopicsControllerTest: test_should_update_topic
+----------------------------------------------
+  [1m[35mTopic Load (1.0ms)[0m  SELECT "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1  [["id", 980190962]]
+Processing by TopicsController#update as HTML
+  Parameters: {"topic"=>{"course_id"=>"1", "description"=>"MyString", "name"=>"MyString"}, "id"=>"980190962"}
+  [1m[36mTopic Load (0.0ms)[0m  [1mSELECT "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1[0m  [["id", "980190962"]]
+  [1m[35mTopic Load (0.0ms)[0m  SELECT "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1  [["id", "980190962"]]
+  [1m[36mCourse Load (0.0ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE "courses"."id" IS NULL LIMIT 1[0m
+Completed 500 Internal Server Error in 1ms
+  [1m[35m (0.0ms)[0m  rollback transaction
