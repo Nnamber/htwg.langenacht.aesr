@@ -4,6 +4,7 @@ class QuestionsController < ApplicationController
   def select
     @question = Question.find(params[:id])
     session[:question_id] = @question.id
+    session[:questiontype] = @question.questiontype
     redirect_to answers_path
   end
 

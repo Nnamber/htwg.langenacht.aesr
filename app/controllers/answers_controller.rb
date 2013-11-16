@@ -6,7 +6,12 @@ class AnswersController < ApplicationController
   def index
     # @answers = Answer.all
     @currentquestion = Question.find_by_id(session[:question_id])
+    @questiontype = @currentquestion.questiontype
     @answers = @currentquestion.answers
+  end
+  
+  def qtype
+    @questiontype = session[:questiontype]
   end
 
   # GET /answers/1
