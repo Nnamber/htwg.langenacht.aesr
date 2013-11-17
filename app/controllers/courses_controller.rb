@@ -1,6 +1,5 @@
 class CoursesController < ApplicationController
   before_action :set_course, only: [:show, :edit, :update, :destroy]
-
   def select
     @course = Course.find(params[:id])
     session[:course_id] = @course.id
@@ -11,6 +10,11 @@ class CoursesController < ApplicationController
   # GET /courses.json
   def index
     @courses = Course.all
+
+    respond_to do |format|
+      format.html
+      format.json { render json: @courses }
+    end
   end
 
   # GET /courses/1

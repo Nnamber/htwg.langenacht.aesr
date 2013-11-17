@@ -9,10 +9,6 @@ class AnswersController < ApplicationController
     @questiontype = @currentquestion.questiontype
     @answers = @currentquestion.answers
   end
-  
-  def qtype
-    @questiontype = session[:questiontype]
-  end
 
   # GET /answers/1
   # GET /answers/1.json
