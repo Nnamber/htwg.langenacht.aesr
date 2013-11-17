@@ -13,7 +13,8 @@ class CoursesController < ApplicationController
 
     respond_to do |format|
       format.html
-      format.json { render json: @courses }
+      # format.json { render json: @courses }
+      format.json { render json: @courses.to_json(:include => {:topics => {:include => {:questions => {:include => :answers}}}})}
     end
   end
 
