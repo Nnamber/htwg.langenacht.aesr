@@ -44,5 +44,5 @@ end
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
-gem "gretel"
 gem "paperclip", "~> 3.0"
+gem "zurb-foundation"

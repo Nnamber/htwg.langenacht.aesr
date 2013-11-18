@@ -14,6 +14,7 @@ class CoursesController < ApplicationController
     respond_to do |format|
       format.html
       # format.json { render json: @courses }
+      ActiveRecord::Base.include_root_in_json = true
       format.json { render json: @courses.to_json(:include => {:topics => {:include => {:questions => {:include => :answers}}}})}
     end
   end
