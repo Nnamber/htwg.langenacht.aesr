@@ -1,29 +1,37 @@
 <%= form_for(@topic) do |f| %>
-  <% if @topic.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@topic.errors.count, "error") %> prohibited this topic from being saved:</h2>
+<% if @topic.errors.any? %>
+<div id="error_explanation">
+	<!-- <h2><%= pluralize(@topic.errors.count, "error") %> prohibited this topic from being saved:</h2> -->
 
-      <ul>
-      <% @topic.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
+	<ul>
+		<% @topic.errors.full_messages.each do |msg| %>
+		<li class="alert-box alert round">
+			<%= msg %>
+		</li>
+		<% end %>
+	</ul>
+</div>
+<% end %>
 
-  <div class="field">
-    <%= f.label :name %><br>
-    <%= f.text_field :name %>
-  </div>
-  <div class="field">
-    <%= f.label :description %><br>
-    <%= f.text_field :description %>
-  </div>
-  <!-- <div class="field">
-    <%= f.label :course_id %><br>
-    <%= f.number_field :course_id %>
-  </div> -->
-  <div class="actions">
-    <%= f.submit %>
-  </div>
+<div class="row collapse">
+	<div class="small-2 columns">
+		<%= f.label :name, class:"right inline" %>
+	</div>
+	<div class="small-10 columns">
+		<%= f.text_field :name %>
+	</div>
+</div>
+<div class="row collapse">
+	<div class="small-2 columns">
+		<%= f.label :description, class:"right inline" %>
+	</div>
+	<div class="small-10 columns">
+		<%= f.text_field :description %>
+	</div>
+</div>
+<div class="row collapse">
+	<div class="small-10 small-offset-2 columns">
+		<%= f.submit %>
+	</div>
+</div>
 <% end %>

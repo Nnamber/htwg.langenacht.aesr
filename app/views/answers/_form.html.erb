@@ -1,11 +1,10 @@
 <%= form_for(@answer) do |f| %>
 <% if @answer.errors.any? %>
 <div id="error_explanation">
-	<h2><%= pluralize(@answer.errors.count, "error") %> prohibited this answer from being saved:</h2>
-
+	<!-- <h2><%= pluralize(@answer.errors.count, "error") %> prohibited this answer from being saved:</h2> -->
 	<ul>
 		<% @answer.errors.full_messages.each do |msg| %>
-		<li>
+		<li class="alert-box alert round">
 			<%= msg %>
 		</li>
 		<% end %>
@@ -13,31 +12,41 @@
 </div>
 <% end %>
 
-<div class="field" id="field_notice">
-	<%= f.label :notice %>
-	<br>
-	<%= f.text_field :notice %>
+<div class="row collapse" id="field_notice">
+	<div class="small-2 columns">
+	<%= f.label :notice, class:"right inline" %>
+	</div>
+	<div class="small-10 columns">
+		<%= f.text_field :notice %>
+	</div>
 </div>
-<div class="field" id="field_body">
-	<%= f.label :body %>
-	<br>
-	<%= f.text_area :body %>
+<div class="row collapse" id="field_body">
+	<div class="small-2 columns">
+		<%= f.label :body, class:"right inline" %>
+	</div>
+	<div class="small-10 columns">
+		<%= f.text_area :body %>
+	</div>
 </div>
-<div class="field" id="field_correct">
-	<%= f.label :correct %>
-	<br>
-	<%= f.check_box :correct %>
+<div class="row collapse" id="field_correct">
+	<div class="small-2 columns">
+		<%= f.label :correct, class:"right inline" %>
+	</div>
+	<div class="small-10 columns">
+		<%= f.check_box :correct %>
+	</div>
 </div>
-<div class="field" id="field_pattern">
-	<%= f.label :pattern %>
-	<br>
-	<%= f.text_field :pattern %>
+<div class="row collapse" id="field_pattern">
+	<div class="small-2 columns">
+	<%= f.label :pattern, class:"right inline" %>
+	</div>
+	<div class="small-10 columns">
+		<%= f.text_field :pattern %>
+	</div>
 </div>
-<!-- <div class="field">
-<%= f.label :question_id %><br>
-<%= f.number_field :question_id %>
-</div> -->
-<div class="actions">
-	<%= f.submit %>
+<div class="row collapse">
+	<div class="small-10 small-offset-2 columns">
+		<%= f.submit %>
+	</div>
 </div>
 <% end %>

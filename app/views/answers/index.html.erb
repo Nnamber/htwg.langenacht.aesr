@@ -1,4 +1,4 @@
-<h1>Listing answers</h1>
+<h1>Antworten von Frage: <%= @currentquestion.name %></h1>
 
 <table>
 	<thead>
@@ -33,4 +33,4 @@
 <br>
 <!-- <%= @questiontype %> -->
 
-<%= link_to 'New Answer', new_answer_path %>
+<%= link_to 'New Answer', new_answer_path, class:"small button radius" %>
