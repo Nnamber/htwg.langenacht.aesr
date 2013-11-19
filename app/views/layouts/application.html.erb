@@ -29,19 +29,57 @@
 				<li class="name">
 					<h1><%= link_to "Mindmailer Lite v1.0", courses_path%></h1>
 				</li>
+				<li class="toggle-topbar menu-icon">
+					<a href="#"><span>Menu</span></a>
+				</li>
 			</ul>
-
-			<section class="top-bar-section">
+			<section class="top-bar-section ">
 				<!-- Left Nav Section -->
 				<ul class="right">
 					<li class="divider"></li>
-					<li> <%= link_to "Kurs anlegen", courses_path%></li>
+					<li class="name">
+						<%= link_to "Quick Start"%>
+					</li>
 					<li class="divider"></li>
-					<li> <%= link_to "Thema anlegen", topics_path%></li>
+					<li>
+						<%= link_to "Kurs anlegen", courses_path%>
+					</li>
 					<li class="divider"></li>
-					<li> <%= link_to "Fragen anlegen", questions_path%></li>
+					<li>
+						<%= link_to "Thema anlegen", topics_path%>
+					</li>
+					<li class="has-dropdown">
+						<a href="#">Thema anlegen</a>
+						<ul class="dropdown">
+							<li>
+								<label>Kurs wählen</label>
+							</li>
+							<% @courses.each do |course| %>
+							<li>
+								<%= link_to course.topic%>
+							</li>
+							<% end %>
+							<li>
+								<a href="#">Dropdown Level 1b</a>
+							</li>
+							<li>
+								<a href="#">Dropdown Level 1c</a>
+							</li>
+							<li class="divider"></li>
+
+							<li>
+								<a href="#">See all &rarr;</a>
+							</li>
+						</ul>
+					</li>
 					<li class="divider"></li>
-					<li> <%= link_to "Antworten anlegen", answers_path%></li>
+					<li>
+						<%= link_to "Fragen anlegen", questions_path%>
+					</li>
+					<li class="divider"></li>
+					<li>
+						<%= link_to "Antworten anlegen", answers_path%>
+					</li>
 					<li class="divider"></li>
 				</ul>
 			</section>

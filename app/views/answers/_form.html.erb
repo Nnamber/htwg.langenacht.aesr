@@ -14,7 +14,7 @@
 
 <div class="row collapse" id="field_notice">
 	<div class="small-2 columns">
-	<%= f.label :notice, class:"right inline" %>
+		<%= f.label :notice, class:"right inline" %>
 	</div>
 	<div class="small-10 columns">
 		<%= f.text_field :notice %>
@@ -29,16 +29,25 @@
 	</div>
 </div>
 <div class="row collapse" id="field_correct">
+	<% if @questiontype == "multiplechoice" || @questiontype == "singlechoice" %>
 	<div class="small-2 columns">
-		<%= f.label :correct, class:"right inline" %>
+		<%= f.label :correct, class:"right inline"%>
 	</div>
 	<div class="small-10 columns">
 		<%= f.check_box :correct %>
 	</div>
+	<% else%>
+	<div class="small-2 columns">
+		<%= f.label :correct, class:"right inline", title: "Muss diesem Fragetyp (" + @questiontype + ") angehakt sein", data: {tooltip:true}  %>
+	</div>
+	<div class="small-10 columns">
+		<%= f.check_box :correct, :checked=>true, :disabled => true%>
+	</div>
+	<% end %>
 </div>
 <div class="row collapse" id="field_pattern">
 	<div class="small-2 columns">
-	<%= f.label :pattern, class:"right inline" %>
+		<%= f.label :pattern, class:"right inline" %>
 	</div>
 	<div class="small-10 columns">
 		<%= f.text_field :pattern %>
