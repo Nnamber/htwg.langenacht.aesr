@@ -49,9 +49,6 @@
 						<%= link_to "Kurs anlegen", courses_path%>
 					</li>
 					<li class="divider"></li>
-					<li>
-						<%= link_to "Thema anlegen", topics_path%>
-					</li>
 					<li class="has-dropdown">
 						<a href="#">Thema anlegen</a>
 						<ul class="dropdown">
@@ -89,7 +86,7 @@
 			<div class="large-12 columns">
 				<dl class="sub-nav">
 					<dt>
-						Angemeldet als: <%= current_user.username %>
+						Angemeldet als: <b><%= current_user.username %></b>
 					</dt>
 					<dd>
 						<%= link_to "Logout", logout_path, class:"tiny button radius" %>
@@ -98,7 +95,7 @@
 				<div id="error_explanation">
 					<% flash.each do |name, msg| %>
 					<ul>
-						<li class="alert-box alert round">
+						<li class="alert-box success large-6 round">
 							<%= content_tag :div, msg, :id => "flash_#{name}" %>
 						</li>
 					</ul>
@@ -115,7 +112,7 @@
 				<div id="error_explanation">
 					<% flash.each do |name, msg| %>
 					<ul>
-						<li class="alert-box alert round">
+						<li class="alert-box success round">
 							<%= content_tag :div, msg, :id => "flash_#{name}" %>
 						</li>
 					</ul>

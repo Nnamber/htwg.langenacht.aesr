@@ -10,7 +10,7 @@ class AuthenticationController < ApplicationController
 
     if user
       session[:user_id] = user.id
-      flash[:notice] = 'Willkommen.'
+      flash[:notice] = 'Sie haben sich erfolgreich eingeloggt. Willkommen ...'
       redirect_to courses_path
     else
       flash.now[:error] = 'Login Fehlgeschlagen. Bitte Benutzername und Passwort pruefen'
