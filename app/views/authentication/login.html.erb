@@ -1,0 +1,32 @@
+<%= form_for User.new, :as => :user, :url => login_path(@user) do |f| %>
+<fieldset>
+	<legend>
+		Login
+	</legend>
+	<div class="row collapse">
+		<div class="small-4 columns">
+			<%= f.label 'Benutzername: ', class:"right inline" %>
+		</div>
+		<div class="small-3 columns" >
+			<%= f.text_field :username %>
+		</div>
+	</div>
+	<div class="row collapse">
+		<div class="small-4 columns">
+			<%= f.label 'Passwort: ' , class:"right inline"%>
+		</div>
+		<div class="small-3 columns">
+			<%= f.password_field :password %>
+		</div>
+	</div>
+	<div class="row collapse">
+		<div class="small-1 columns ">
+			<%= f.submit 'Login' %>
+		</div>
+		<div class="small-1 columns ">
+			<%= f.submit 'Clear Form', :type => 'reset' %>
+		</div>
+
+	</div>
+</fieldset>
+<% end %>

@@ -15,7 +15,12 @@
 
 		<!-- Set the viewport width to device width for mobile -->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+		<% if current_user %>
+		Logged in as <%= current_user.username %>
+		<%= link_to "Sign Out"%>
+		<% else %>
+		<%= link_to "Login", loginin_path %>
+		<% end %>
 		<title><%= content_for?(:title) ? yield(:title) : "Mindmailer Lite" %></title>
 
 		<%= stylesheet_link_tag    "application" %>
@@ -54,11 +59,7 @@
 							<li>
 								<label>Kurs wählen</label>
 							</li>
-							<% @courses.each do |course| %>
-							<li>
-								<%= link_to course.topic%>
-							</li>
-							<% end %>
+
 							<li>
 								<a href="#">Dropdown Level 1b</a>
 							</li>
@@ -84,8 +85,18 @@
 				</ul>
 			</section>
 		</nav>
+		<br>
 		<div class="row">
 			<div class="large-12 columns">
+				<div id="error_explanation">
+					<% flash.each do |name, msg| %>
+					<ul>
+						<li class="alert-box alert round">
+							<%= content_tag :div, msg, :id => "flash_#{name}" %>
+						</li>
+					</ul>
+					<% end %>
+				</div>
 				<%= yield %>
 			</div>
 		</div>
