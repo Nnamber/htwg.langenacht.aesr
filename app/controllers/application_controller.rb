@@ -11,7 +11,7 @@ class ApplicationController < ActionController::Base
 
   def authenticate_user
     if current_user.nil?
-      flash[:error] = 'Sie muessen sich zuerst Anmelden um diese Seite sehen zu koennen'
+      flash[:error] = 'Sie muessen sich zuerst Anmelden.'
       redirect_to login_path
     end
   end

@@ -1,5 +1,5 @@
 class CoursesController < ApplicationController
-  before_filter :authenticate_user
+  before_filter :authenticate_user , :only => [:select, :show, :new, :edit, :create, :update, :destroy]
   before_action :set_course, only: [:show, :edit, :update, :destroy]
   
   def select
