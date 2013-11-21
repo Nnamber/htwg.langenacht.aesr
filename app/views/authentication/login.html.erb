@@ -4,29 +4,28 @@
 		Login
 	</legend>
 	<div class="row collapse">
-		<div class="small-4 columns">
+		<div class="small-5 columns">
 			<%= f.label 'Benutzername: ', class:"right inline" %>
 		</div>
-		<div class="small-3 columns" >
+		<div class="small-6 columns" >
 			<%= f.text_field :username %>
 		</div>
 	</div>
 	<div class="row collapse">
-		<div class="small-4 columns">
+		<div class="small-5 columns">
 			<%= f.label 'Passwort: ' , class:"right inline"%>
 		</div>
-		<div class="small-3 columns">
+		<div class="small-6 columns">
 			<%= f.password_field :password %>
 		</div>
 	</div>
 	<div class="row collapse">
-		<div class="small-1 columns ">
-			<%= f.submit 'Login' %>
-		</div>
-		<div class="small-1 columns ">
-			<%= f.submit 'Clear Form', :type => 'reset' %>
-		</div>
-
+		<div class="small-3 right columns">
+			<%= f.submit 'Clear Form', :type => 'reset', class:"tiny button radius" %>
+		</div>	
+		<div class="small-3 right columns">
+			<%= f.submit 'Login', class:"tiny button radius" %>
+		</div>		
 	</div>
 </fieldset>
 <% end %>

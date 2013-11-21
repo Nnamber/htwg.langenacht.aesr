@@ -1,5 +1,4 @@
 class AuthenticationController < ApplicationController
-  
   def login
   end
 
@@ -21,6 +20,7 @@ class AuthenticationController < ApplicationController
 
   def logout
     session[:user_id] = nil
-    flash[:notice] = "Sie haben sich ausgeloggt ..."
+    flash[:notice] = "Sie haben sich erfolgreich ausgeloggt ..."
+    render :action =>"login"
   end
 end
