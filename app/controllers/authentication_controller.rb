@@ -1,4 +1,5 @@
 class AuthenticationController < ApplicationController
+  
   def login
   end
 
@@ -16,5 +17,10 @@ class AuthenticationController < ApplicationController
       flash.now[:error] = 'Login Fehlgeschlagen. Bitte Benutzername und Passwort pruefen'
       render :action => "login"
     end
+  end
+
+  def logout
+    session[:user_id] = nil
+    flash[:notice] = "Sie haben sich ausgeloggt ..."
   end
 end

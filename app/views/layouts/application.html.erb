@@ -17,9 +17,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<% if current_user %>
 		Logged in as <%= current_user.username %>
-		<%= link_to "Sign Out"%>
+		<%= link_to "Logout", logout_path %>
 		<% else %>
-		<%= link_to "Login", loginin_path %>
+		<%= link_to "Login", login_path %>
 		<% end %>
 		<title><%= content_for?(:title) ? yield(:title) : "Mindmailer Lite" %></title>
 

@@ -1,4 +1,5 @@
 MindmailerLiteV10::Application.routes.draw do
+    
   resources :answers
 
   resources :questions
@@ -11,9 +12,13 @@ MindmailerLiteV10::Application.routes.draw do
   get "topics/select/:id" => "topics#select", as: "select_topic"
   get "questions/select/:id" => "questions#select", as: "select_question"
    
+  get "authentication/logout"
   get "authentication/login"
   get "login" => "authentication#login"
   post "login" => "authentication#signin"
+  
+  get "logout" =>"authentication#logout"
+  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
