@@ -17,13 +17,12 @@ class AnswersController < ApplicationController
   # GET /answers/new
   def new
     if params[:q_id] != nil
-      @question = Question.find(params[:q_id])
-    @@q_id = @question.id
+      @currentquestion = Question.find(params[:q_id])
+    @@q_id = @currentquestion.id
     elsif
     @@q_id = nil
     end
 
-    @currentquestion = Question.find_by_id(session[:question_id])
     @questiontype = @currentquestion.questiontype
     @answer = Answer.new
   end
