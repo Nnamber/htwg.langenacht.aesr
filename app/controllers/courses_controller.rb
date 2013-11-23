@@ -1,7 +1,6 @@
 class CoursesController < ApplicationController
-  before_filter :authenticate_user , :only => [:select, :show, :new, :edit, :create, :update, :destroy]
+  before_filter :authenticate_user , :only => [:select, :show, :new, :edit, :create, :update, :destroy, :index]
   before_action :set_course, only: [:show, :edit, :update, :destroy]
-  
   def select
     @course = Course.find(params[:id])
     session[:course_id] = @course.id
@@ -12,7 +11,14 @@ class CoursesController < ApplicationController
   # GET /courses.json
   def index
     @courses = Course.all
+    respond_to do |format|
+      format.html
+      format.json { render json: @courses }
+    end
+  end
 
+  def courses_json
+    @courses = Course.all
     respond_to do |format|
       format.html
       # format.json { render json: @courses }
@@ -86,4 +92,15 @@ class CoursesController < ApplicationController
   def course_params
     params.require(:course).permit(:topic, :description)
   end
+
+  def render_json
+    @courses = Course.all
+    respond_to do |format|
+      format.html
+      # format.json { render json: @courses }
+      ActiveRecord::Base.include_root_in_json = true
+      format.json { render json: @courses.to_json(:include => {:topics => {:include => {:questions => {:include => :answers}}}})}
+    end
+  end
+
 end

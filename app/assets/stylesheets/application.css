@@ -12,3 +12,17 @@
  *= require foundation_and_overrides
  *= require_tree .
  */
+
+#flash_error {
+  border: 1px solid #610B0B;
+  padding: 4px;
+  margin-bottom: 10px;
+  background-color: #FF0000;
+}
+
+#flash_notice {
+  border: 1px solid #088A08;
+  padding: 4px;
+  margin-bottom: 10px;
+  background-color: #40FF00;
+}

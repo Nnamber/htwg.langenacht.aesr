@@ -21,6 +21,6 @@ class AuthenticationController < ApplicationController
   def logout
     session[:user_id] = nil
     flash[:notice] = "Sie haben sich erfolgreich ausgeloggt ..."
-    render :action =>"login"
+    redirect_to login_path
   end
 end

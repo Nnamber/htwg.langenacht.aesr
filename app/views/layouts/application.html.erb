@@ -15,7 +15,7 @@
 
 		<!-- Set the viewport width to device width for mobile -->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title><%= content_for?(:title) ? yield(:title) : "Mindmailer Lite" %></title>
+		<title>Mindmailer Lite - <%= yield(:title) %></title>
 		<%= stylesheet_link_tag    "application" %>
 		<%= javascript_include_tag "vendor/custom.modernizr" %>
 		<%= csrf_meta_tags %>
@@ -40,7 +40,7 @@
 					</li>
 					<li class="divider"></li>
 					<li>
-						<%= link_to "Kurs anlegen", courses_path%>
+						<%= link_to "Kurs anlegen", new_course_path%>
 					</li>
 					<li class="divider"></li>
 					<li class="has-dropdown">
@@ -49,7 +49,6 @@
 							<li>
 								<label>Kurs wählen</label>
 							</li>
-
 							<li>
 								<a href="#">Dropdown Level 1b</a>
 							</li>
@@ -57,7 +56,6 @@
 								<a href="#">Dropdown Level 1c</a>
 							</li>
 							<li class="divider"></li>
-
 							<li>
 								<a href="#">See all &rarr;</a>
 							</li>
@@ -86,15 +84,14 @@
 						<%= link_to "Logout", logout_path, class:"tiny button radius" %>
 					</dd>
 				</dl>
-				<div id="error_explanation">
-					<% flash.each do |name, msg| %>
-					<ul>
-						<li class="alert-box success large-6 round">
-							<%= content_tag :div, msg, :id => "flash_#{name}" %>
-						</li>
-					</ul>
-					<% end %>
+				<div class="row">
+					<div id="error_explanation" class="small-6 columns">
+						<% flash.each do |name, msg| %>
+						<%= content_tag :div, msg, :id => "flash_#{name}" %>
+						<% end %>
+					</div>
 				</div>
+				<h3 class="subheader"><%= yield(:title) %></h3>
 				<%= yield %>
 			</div>
 		</div>
@@ -105,11 +102,7 @@
 			<div class="small-5 small-centered columns">
 				<div id="error_explanation">
 					<% flash.each do |name, msg| %>
-					<ul>
-						<li class="alert-box success round">
-							<%= content_tag :div, msg, :id => "flash_#{name}" %>
-						</li>
-					</ul>
+					<%= content_tag :div, msg, :id => "flash_#{name}" %>
 					<% end %>
 				</div>
 				<%= yield %>

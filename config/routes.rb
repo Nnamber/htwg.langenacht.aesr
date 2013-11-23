@@ -16,8 +16,11 @@ MindmailerLiteV10::Application.routes.draw do
   get "authentication/login"
   get "login" => "authentication#login"
   post "login" => "authentication#signin"
-  
   get "logout" =>"authentication#logout"
+  
+  #Diese Route ist auch ohne "login" über 'http://localhost:3000/course/courses.json' erreichbar
+  get "course/courses" => "courses#courses_json"
+  
   
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

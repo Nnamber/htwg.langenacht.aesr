@@ -2,30 +2,33 @@
 <% if @course.errors.any? %>
 <div id="error_explanation">
 	<!-- <p><%= pluralize(@course.errors.count, "error") %> prohibited this course from being saved:</p> -->
-	<ul >
 		<% @course.errors.full_messages.each do |msg| %>
-		<li class="alert-box small-3 push-2 alert round">
+		<div class="small-3 push-2" id="flash_error">
 			<%= msg %>
-		</li>
+		</div
 		<% end %>
-	</ul>
 </div>
 <% end %>
-
 <div class="row collapse">
 	<div class="small-2 columns">
-	<%= f.label :topic, class:"right inline" %>
-	</div> 	
-	<div class="small-10 columns"><%= f.text_field :topic %></div>
-</div>
-<div class="row collapse">
-	<div class="small-2 columns">
-	<%= f.label :description, class:"right inline" %>
+		<%= f.label :topic, class:"right inline" %>
 	</div>
-	<div class="small-10 columns"><%= f.text_field :description %></div>
+	<div class="small-10 columns">
+		<%= f.text_field :topic %>
+	</div>
 </div>
 <div class="row collapse">
-	<div class="small-10 small-offset-2 columns"><%= f.submit %></div>
+	<div class="small-2 columns">
+		<%= f.label :description, class:"right inline" %>
+	</div>
+	<div class="small-10 columns">
+		<%= f.text_field :description %>
+	</div>
+</div>
+<div class="row collapse">
+	<div class="small-10 small-offset-2 columns">
+		<%= f.submit %>
+	</div>
 </div>
 <%= form_for @course, :url => courses_path, :html => { :multipart => true } do |form| %>
 <%= form.file_field :xmlfile %>

@@ -2,13 +2,11 @@
 <% if @answer.errors.any? %>
 <div id="error_explanation">
 	<!-- <h2><%= pluralize(@answer.errors.count, "error") %> prohibited this answer from being saved:</h2> -->
-	<ul>
-		<% @answer.errors.full_messages.each do |msg| %>
-		<li class="alert-box small-3 push-2 alert round">
-			<%= msg %>
-		</li>
-		<% end %>
-	</ul>
+	<% @answer.errors.full_messages.each do |msg| %>
+	<div class="small-3 push-2" id="flash_error">
+		<%= msg %>
+	</div>
+	<% end %>
 </div>
 <% end %>
 

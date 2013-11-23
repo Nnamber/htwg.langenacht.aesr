@@ -15,5 +15,4 @@ class ApplicationController < ActionController::Base
       redirect_to login_path
     end
   end
-
 end

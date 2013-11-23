@@ -24,6 +24,8 @@ class AnswersController < ApplicationController
 
   # GET /answers/1/edit
   def edit
+    @currentquestion = Question.find_by_id(session[:question_id])
+    @questiontype = @currentquestion.questiontype
   end
 
   # POST /answers
