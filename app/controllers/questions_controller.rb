@@ -1,7 +1,6 @@
 class QuestionsController < ApplicationController
   before_filter :authenticate_user
   before_action :set_question, only: [:show, :edit, :update, :destroy]
-
   def select
     @question = Question.find(params[:id])
     session[:question_id] = @question.id
@@ -29,6 +28,13 @@ class QuestionsController < ApplicationController
 
   # GET /questions/new
   def new
+    if params[:t_id] != nil
+      @topic = Topic.find(params[:t_id])
+      @@t_id = @topic.id
+    elsif
+    @@t_id = nil
+    end
+
     @question = Question.new
   end
 
@@ -40,7 +46,12 @@ class QuestionsController < ApplicationController
   # POST /questions.json
   def create
     @question = Question.new(question_params)
-    @currenttopic = Topic.find_by_id(session[:topic_id])
+    if @@t_id != nil
+      @currenttopic = Topic.find_by_id(@@t_id)
+      @@t_id = nil
+    elsif
+     @currenttopic = Topic.find_by_id(session[:topic_id])
+    end
     @question.topic_id = @currenttopic.id
 
     respond_to do |format|

@@ -11,7 +11,6 @@ class TopicsController < ApplicationController
   # GET /topics
   # GET /topics.json
   def index
-    # @topics = Topic.all
     @currentcourse = Course.find_by_id(session[:course_id])
     @topics = @currentcourse.topics
     
@@ -28,6 +27,13 @@ class TopicsController < ApplicationController
 
   # GET /topics/new
   def new
+    if params[:c_id] != nil
+      @course = Course.find(params[:c_id])
+      @@c_id = @course.id
+     elsif
+      @@c_id = nil
+    end
+    
     @topic = Topic.new
   end
 
@@ -39,7 +45,12 @@ class TopicsController < ApplicationController
   # POST /topics.json
   def create
     @topic = Topic.new(topic_params)
-    @currentcourse = Course.find_by_id(session[:course_id])
+    if @@c_id != nil
+       @currentcourse = Course.find_by_id(@@c_id)
+       @@c_id = nil
+     elsif
+       @currentcourse = Course.find_by_id(session[:course_id])
+    end
     @topic.course_id = @currentcourse.id
    
 

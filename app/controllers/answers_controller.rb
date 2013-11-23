@@ -1,7 +1,6 @@
 class AnswersController < ApplicationController
   before_filter :authenticate_user
   before_action :set_answer, only: [:show, :edit, :update, :destroy]
-
   # GET /answers
   # GET /answers.json
   def index
@@ -17,6 +16,13 @@ class AnswersController < ApplicationController
 
   # GET /answers/new
   def new
+    if params[:q_id] != nil
+      @question = Question.find(params[:q_id])
+    @@q_id = @question.id
+    elsif
+    @@q_id = nil
+    end
+
     @currentquestion = Question.find_by_id(session[:question_id])
     @questiontype = @currentquestion.questiontype
     @answer = Answer.new
@@ -31,10 +37,16 @@ class AnswersController < ApplicationController
   # POST /answers
   # POST /answers.json
   def create
-    
+
     @answer = Answer.new(answer_params)
     @currenttype = Question.find_by_id(session[:questiontype])
-    @currentquestion = Question.find_by_id(session[:question_id])
+
+    if @@q_id != nil
+      @currentquestion = Question.find_by_id(@@q_id)
+      @@q_id = nil
+    elsif
+      @currentquestion = Question.find_by_id(session[:question_id])
+    end
     @answer.question_id = @currentquestion.id
 
     respond_to do |format|
@@ -54,7 +66,7 @@ class AnswersController < ApplicationController
     @answer = Answer.find(params[:id])
     @currentquestion = Question.find_by_id(session[:question_id])
     @answer.question_id = @currentquestion.id
-    
+
     respond_to do |format|
       if @answer.update(answer_params)
         format.html { redirect_to @answer, notice: 'Answer was successfully updated.' }
@@ -77,13 +89,14 @@ class AnswersController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_answer
-      @answer = Answer.find(params[:id])
-    end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
-    def answer_params
-      params.require(:answer).permit(:notice, :body, :correct, :pattern, :question_id)
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_answer
+    @answer = Answer.find(params[:id])
+  end
+
+  # Never trust parameters from the scary internet, only allow the white list through.
+  def answer_params
+    params.require(:answer).permit(:notice, :body, :correct, :pattern, :question_id)
+  end
 end
