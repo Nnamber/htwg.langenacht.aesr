@@ -31,7 +31,7 @@ class QuestionsController < ApplicationController
     if params[:t_id] != nil
       @topic = Topic.find(params[:t_id])
       @@t_id = @topic.id
-    elsif
+    else
     @@t_id = nil
     end
 
@@ -49,7 +49,7 @@ class QuestionsController < ApplicationController
     if @@t_id != nil
       @currenttopic = Topic.find_by_id(@@t_id)
       @@t_id = nil
-    elsif
+    else
      @currenttopic = Topic.find_by_id(session[:topic_id])
     end
     @question.topic_id = @currenttopic.id

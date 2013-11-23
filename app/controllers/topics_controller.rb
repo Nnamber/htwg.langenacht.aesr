@@ -30,7 +30,7 @@ class TopicsController < ApplicationController
     if params[:c_id] != nil
       @course = Course.find(params[:c_id])
       @@c_id = @course.id
-     elsif
+     else
       @@c_id = nil
     end
     
@@ -48,7 +48,7 @@ class TopicsController < ApplicationController
     if @@c_id != nil
        @currentcourse = Course.find_by_id(@@c_id)
        @@c_id = nil
-     elsif
+     else
        @currentcourse = Course.find_by_id(session[:course_id])
     end
     @topic.course_id = @currentcourse.id
