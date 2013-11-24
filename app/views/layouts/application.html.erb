@@ -8,6 +8,7 @@
 <html lang="en">
 	<!--<![endif]-->
 	<head>
+		<link href="<%= image_path("favicon.ico") %>" rel="shortcut icon" />
 		<meta charset="utf-8" />
 
 		<!-- Uncomment to make IE8 render like IE7 -->
@@ -110,7 +111,7 @@
 		<% else %>
 		</br>
 		<div class="row">
-			<div class="small-5 small-centered columns">
+			<div class="small-8 small-centered columns">
 				<div id="error_explanation">
 					<% flash.each do |name, msg| %>
 					<%= content_tag :div, msg, :id => "flash_#{name}" %>

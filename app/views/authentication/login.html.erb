@@ -4,31 +4,37 @@
 	<legend>
 		Login
 	</legend>
-	<div class="row collapse">
-		<div class="small-5 columns">
-			<%= f.label 'Benutzername: ', class:"right inline" %>
+	<div class="row">
+		<div class="small-2 large-8 columns ">
+			<div class="row collapse">
+				<div class="small-5 columns">
+					<%= f.label 'Benutzername: ', class:"right inline" %>
+				</div>
+				<div class="small-7 columns" >
+					<%= f.text_field :username %>
+				</div>
+			</div>
+			<div class="row collapse">
+				<div class="small-5 columns">
+					<%= f.label 'Passwort: ' , class:"right inline"%>
+				</div>
+				<div class="small-7 columns">
+					<%= f.password_field :password %>
+				</div>
+			</div>
+			<div class="row collapse">
+				<div class="small-3 push-5 columns">
+					<%= f.submit 'Login', class:"tiny button radius" %>
+				</div>
+				<div class="small-4 columns">
+					<%= f.submit 'Clear Form', :type => 'reset', class:"tiny button radius right" %>
+				</div>
+			</div>
 		</div>
-		<div class="small-7 columns" >
-			<%= f.text_field :username %>
+		<div class="small-2 large-4 left columns">
+			<%= image_tag("mindmailer_logo1.png", :alt => "Mindmailer", :width => "85%") %>
 		</div>
-	</div>
-	<div class="row collapse">
-		<div class="small-5 columns">
-			<%= f.label 'Passwort: ' , class:"right inline"%>
 		</div>
-		<div class="small-7 columns">
-			<%= f.password_field :password %>
-		</div>
-	</div>
-	<div class="row collapse">
-		<div class="small-3 push-5 columns">
-			<%= f.submit 'Login', class:"tiny button radius" %>
-		</div>			
-		<div class="small-4 columns">
-			<%= f.submit 'Clear Form', :type => 'reset', class:"tiny button radius" %>
-		</div>	
-	
-	</div>
 </fieldset>
 <% end %>
 
