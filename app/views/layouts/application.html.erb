@@ -23,66 +23,68 @@
 
 	<body>
 		<% if current_user %>
-		<nav class="top-bar">
-			<ul class="title-area">
-				<li class="name">
-					<h1><%= link_to "Mindmailer Lite v1.0", courses_path%></h1>
-				</li>
-				<li class="toggle-topbar menu-icon">
-					<a href="#"><span>Menu</span></a>
-				</li>
-			</ul>
-			<section class="top-bar-section ">
-				<ul class="right">
-					<li class="divider"></li>
-					<li class="has-dropdown">
-						<a href="#">Quickstart</a>
-						<ul class="dropdown">
-							<li>
-								<%= link_to "Kurs anlegen", new_course_path%>
-							<li>
-								<label>Thema anlegen</label>
-							</li>
-							<% $courses.each do |course| %>
-							<li class="has-dropdown">
-								<%= link_to course.topic, new_topic_path(:c_id => course.id) %>
-								<ul class="dropdown">
-									<li>
-										<label>Frage anlegen</label>
-									</li>
-									<% $topics.each do |topic| %>
-									<li class="has-dropdown">
-										<% if course.id == topic.course_id %>
-										<%= link_to topic.name, new_question_path(:t_id => topic.id) %>
-										<% end %>
-										<ul class="dropdown">
-											<li>
-												<label>Antwort anlegen</label>
-											</li>
-											<% $questions.each do |question| %>
-											<li>
-												<% if topic.id == question.topic_id %>
-												<%= link_to question.name, new_answer_path(:q_id => question.id) %>
-												<% end %>
-											</li>
-											<% end %>
-										</ul>
-									</li>
-									<% end %>
-								</ul>
-							</li>
+		<div class="contain-to-grid">
+			<nav class="top-bar ">
+				<ul class="title-area">
+					<li class="name">
+						<h1><%= link_to "Mindmailer Lite v1.0", courses_path%></h1>
 					</li>
-					<% end %>
+					<li class="toggle-topbar menu-icon">
+						<a href="#"><span>Menu</span></a>
+					</li>
 				</ul>
-				</li>
-				<li class="divider"></li>
-				<li>
-					<%= link_to "XML importieren" %>
-				</li>
-				<li class="divider"></li>
-				</ul>
-			</section>
-		</nav>
+				<section class="top-bar-section ">
+					<ul class="right">
+						<li class="divider"></li>
+						<li class="has-dropdown">
+							<a href="#">Quickstart</a>
+							<ul class="dropdown">
+								<li>
+									<%= link_to "Kurs anlegen", new_course_path%>
+								<li>
+									<label>Thema anlegen</label>
+								</li>
+								<% $courses.each do |course| %>
+								<li class="has-dropdown">
+									<%= link_to course.topic, new_topic_path(:c_id => course.id) %>
+									<ul class="dropdown">
+										<li>
+											<label>Frage anlegen</label>
+										</li>
+										<% $topics.each do |topic| %>
+										<li class="has-dropdown">
+											<% if course.id == topic.course_id %>
+											<%= link_to topic.name, new_question_path(:t_id => topic.id) %>
+											<% end %>
+											<ul class="dropdown">
+												<li>
+													<label>Antwort anlegen</label>
+												</li>
+												<% $questions.each do |question| %>
+												<li>
+													<% if topic.id == question.topic_id %>
+													<%= link_to question.name, new_answer_path(:q_id => question.id) %>
+													<% end %>
+												</li>
+												<% end %>
+											</ul>
+										</li>
+										<% end %>
+									</ul>
+								</li>
+						</li>
+						<% end %>
+					</ul>
+					</li>
+					<li class="divider"></li>
+					<li>
+						<%= link_to "XML importieren" %>
+					</li>
+					<li class="divider"></li>
+					</ul>
+				</section>
+			</nav>
+		</div>
 		</br>
 		<div class="row">
 			<div class="large-12 columns">
