@@ -1,5 +1,8 @@
 class AuthenticationController < ApplicationController
   def login
+    if current_user != nil
+      redirect_to courses_path
+    end
   end
 
   def signin
