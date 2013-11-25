@@ -31,6 +31,7 @@ class QuestionsController < ApplicationController
     if params[:t_id] != nil
       @topic = Topic.find(params[:t_id])
       @@t_id = @topic.id
+      session[:topic_id] = @topic.id
     else
     @@t_id = nil
     end

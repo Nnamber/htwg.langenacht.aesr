@@ -30,6 +30,7 @@ class TopicsController < ApplicationController
     if params[:c_id] != nil
       @course = Course.find(params[:c_id])
       @@c_id = @course.id
+      session[:course_id] = @course.id
      else
       @@c_id = nil
     end

@@ -36,10 +36,10 @@
 	</div>
 	<% else%>
 	<div class="small-2 columns">
-		<%= f.label :correct, class:"right inline", title: "Muss diesem Fragetyp (" + @questiontype + ") angehakt sein", data: {tooltip:true}  %>
+		<%= f.label :correct, class:"right inline", title: "Muss diesem Fragetyp angehakt sein", data: {tooltip:true}  %>
 	</div>
 	<div class="small-10 columns">
-		<%= f.check_box :correct, :checked=>true, :disabled => true%>
+		<%= f.check_box :correct, :checked=>true %>
 	</div>
 	<% end %>
 </div>

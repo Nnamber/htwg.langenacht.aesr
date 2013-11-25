@@ -19,6 +19,7 @@ class AnswersController < ApplicationController
     if params[:q_id] != nil
       @currentquestion = Question.find(params[:q_id])
     @@q_id = @currentquestion.id
+    session[:question_id] = @currentquestion.id
     else
       @@q_id = nil
       @currentquestion = Question.find_by_id(session[:question_id])
