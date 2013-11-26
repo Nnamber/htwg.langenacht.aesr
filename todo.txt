@@ -1,0 +1,19 @@
+TODO
+
+Ruby
+- quick navigation rekursiv machen
+- usability quickstart überdenken und anpassen (Benamsung)
+- Sprache anpassen --> dt
+- Größe der Textfelder anpassen
+- optional: Passwort ändern
+- Kind Elemente mitlöschen
+- Breadcrumb (ohne wirst verrückt)
+- fix: Wert von deaktivierter Checkbox bei MatchTask übergeben 
+
+Android
+- Antworten validieren
+- Design
+- JSON erstellen mit allen Fragen
+-- MatchTask
+-- OpenQuestion
+-- ClozeText
