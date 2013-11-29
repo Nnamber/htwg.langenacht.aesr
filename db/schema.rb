@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131121105842) do
+ActiveRecord::Schema.define(version: 20131129141411) do
 
   create_table "answers", force: true do |t|
     t.string   "notice"
@@ -28,6 +28,16 @@ ActiveRecord::Schema.define(version: 20131121105842) do
     t.string   "description"
     t.datetime "created_at"
     t.datetime "updated_at"
+  end
+
+  create_table "imports", force: true do |t|
+    t.string   "useless"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "xmlfile_file_name"
+    t.string   "xmlfile_content_type"
+    t.integer  "xmlfile_file_size"
+    t.datetime "xmlfile_updated_at"
   end
 
   create_table "questions", force: true do |t|

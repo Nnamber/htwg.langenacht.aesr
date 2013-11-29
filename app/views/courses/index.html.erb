@@ -1,29 +1,32 @@
 <% title "Alle Kurse" %>
 <table>
-  <thead>
-    <tr>
-      <th>Titel</th>
-      <th>Beschreibung</th>
-      <th>Themen</th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
+	<thead>
+		<tr>
+			<th>Titel</th>
+			<th>Beschreibung</th>
+			<th>Themen</th>
+			<th></th>
+			<th></th>
+			<th></th>
+		</tr>
+	</thead>
 
-  <tbody>
-    <% @courses.each do |course| %>
-      <tr>
-        <td><%= course.topic %></td>
-        <td><%= course.description %></td>
-        <td><%= link_to 'auswählen', select_course_path(course) %></td>
-        <td><%= link_to 'Show', course %></td>
-        <td><%= link_to 'Edit', edit_course_path(course) %></td>
-        <td><%= link_to 'Destroy', course, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
+	<tbody>
+		<% @courses.each do |course| %>
+		<tr>
+			<td><%= course.topic %></td>
+			<td><%= course.description %></td>
+			<td><%= link_to 'auswählen', select_course_path(course) %></td>
+			<td><%= link_to 'anzeigen', course %></td>
+			<td><%= link_to 'bearbeiten', edit_course_path(course) %></td>
+			<td><%= link_to 'löschen', course, method: :delete, data: { confirm: 'Sicher?' } %></td>
+		</tr>
+		<% end %>
+	</tbody>
 </table>
+<div>
+
+</div>
 <br>
 
 <%= link_to 'New Course', new_course_path, class:"small button radius" %>

@@ -1,5 +1,7 @@
 MindmailerLiteV10::Application.routes.draw do
     
+  resources :imports
+
   resources :answers
 
   resources :questions
@@ -17,6 +19,7 @@ MindmailerLiteV10::Application.routes.draw do
   get "login" => "authentication#login"
   post "login" => "authentication#signin"
   get "logout" =>"authentication#logout"
+  
   
   #Diese Route ist auch ohne "login" über 'http://localhost:3000/course/courses.json' erreichbar
   get "course/courses" => "courses#courses_json"
