@@ -9,6 +9,7 @@ Ruby
 - Kind Elemente mitlöschen
 - Breadcrumb (ohne wirst verrückt)
 - fix: Wert von deaktivierter Checkbox bei MatchTask übergeben 
+- xml parser triggern
 
 Android
 - Antworten validieren
