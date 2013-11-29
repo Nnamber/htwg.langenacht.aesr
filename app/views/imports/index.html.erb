@@ -1,0 +1,27 @@
+<h1>Listing imports</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Dateiname</th>
+      <th></th>
+      <!--th></th-->
+      <!--th></th-->
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @imports.each do |import| %>
+      <tr>
+        <td><%= import.xmlfile_file_name %></td>
+        <td><%= link_to 'anzeigen', import %></td>
+        <!--td><%= link_to 'Edit', edit_import_path(import) %></td-->
+        <!--td><%= link_to 'Destroy', import, method: :delete, data: { confirm: 'Are you sure?' } %></td-->
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'Neue Datei importieren', new_import_path, class:"small button radius"%>

@@ -1,0 +1,28 @@
+<%= form_for(@import) do |f| %>
+<% if @import.errors.any? %>
+<div id="error_explanation">
+	<!--<h2><%= pluralize(@import.errors.count, "error") %> prohibited this import from being saved:</h2>-->
+
+	<% @import.errors.full_messages.each do |msg| %>
+	<div class="small-3 push-2" id="flash_error">
+		<%= msg %>
+	</div>
+	<% end %>
+</div>
+<% end %>
+
+<div class="row collapse">
+	<div class="small-2 columns">
+		<%= f.label "Datei auswählen:", class:"right inline" %>
+	</div>
+	<div class="small-10 columns">
+		<%= f.file_field :xmlfile %>
+	</div>
+</div>
+<div class="row collapse">
+	<div class="small-10 small-offset-2 columns">
+		<%= f.submit "Datei hochladen" %>
+	</div>
+</div>
+<p><br /><strong>!-- z.Zt. upload != import --!</strong><br />Import erst auf nächster Seite</p>
+<% end %>
