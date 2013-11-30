@@ -1,10 +1,12 @@
-<p id="notice"><%= notice %></p>
-
-<p>
-  <strong>XML Datei:</strong>
-  <%= @import.xmlfile %>
+<p id="notice">
+	<%= notice %>
 </p>
 
-<!-- TODO <%=link_to 'importieren', doStuffWithXml -->
+<p>
+	<strong>XML Datei:</strong>
+	<%= @import.xmlfile %><br />
+</p>
+
+<%= link_to 'importieren', @import, method: :import_file %> | 
 <%= link_to 'Edit', edit_import_path(@import) %> |
 <%= link_to 'Back', imports_path %>
