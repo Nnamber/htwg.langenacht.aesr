@@ -29,50 +29,5 @@ class ApplicationController < ActionController::Base
     # end
   # end
 
-  def import_xml
-    f =  File.open("./Mindmailer.xml")
-    xmlcourses = Nokogiri::XML(f)
-
-    xmlcourses.xpath('//course').each do |xmlcourse|
-    # xmlcoursename = @xmlcourse["name"]
-    # xmlcoursedescription = @xmlcourse["description"]
-
-      importcourse = Course.new(
-      :topic => xmlcourse['name'],
-      :description => xmlcourse['description']
-      )
-
-      xmlcourse.xpath("lesson").each do |xmllesson|
-        importtopic = Topic.new(
-        :name => xmllesson["name"],
-        :description => xmllesson["description"],
-        :course_id => importcourse.id
-        )
-        xmllesson.xpath("question").each do |xmlquestion|
-          importquestion = Question.new(
-          :questiontype => xmlquestion["type"],
-          :name => xmlquestion["name"],
-          :body => xmlquestion["body"],
-          :noticewrong => xmlquestion["notice_on_wrong"],
-          :noticeright => xmlquestion["notice_on_correct"],
-          :notice => xmlquestion["notice"],
-          :topic_id => importtopic.id
-          )
-          # xmllesson.elements.each("XPath") do |node| ??
-          xmllesson.xpath("question").each do |xmlanswer|
-            importanswer = Answer.new(
-            :notice => xmlanswer["notice"],
-            :body => xmlanswer["body"],
-            :correct => xmlanswer["correct"],
-            :pattern => xmlquestion["pattern"],
-            :question_id => importquestion.id
-            )
-
-          end
-        end
-      end
-    end
-    f.close
-
-  end
+  
 end

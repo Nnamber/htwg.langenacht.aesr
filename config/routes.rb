@@ -19,6 +19,7 @@ MindmailerLiteV10::Application.routes.draw do
   get "login" => "authentication#login"
   post "login" => "authentication#signin"
   get "logout" =>"authentication#logout"
+  post "imports/:id" => "imports#import_file"
   
   
   #Diese Route ist auch ohne "login" über 'http://localhost:3000/course/courses.json' erreichbar

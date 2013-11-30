@@ -1,5 +1,52 @@
 class ImportsController < ApplicationController
   before_action :set_import, only: [:show, :edit, :update, :destroy]
+  def import_file
+    import = Import.find(params[:id])
+    xmlcourses = Nokogiri::XML(File.read(import.xmlfile.path))
+    parse_file(xmlcourses)
+    redirect_to courses_path
+  end
+
+  def parse_file(doc)
+    doc.xpath('//course').each do |xmlcourse|
+
+      importcourse = Course.create(
+      :topic => xmlcourse['name'],
+      :description => xmlcourse['description']
+      )
+
+      xmlcourse.xpath("lesson").each do |xmllesson|
+        importtopic = Topic.create(
+        :name => xmllesson["name"],
+        :description => xmllesson["description"],
+        :course_id => importcourse.id
+        )
+        xmllesson.xpath("question").each do |xmlquestion|
+          importquestion = Question.create(
+          :questiontype => xmlquestion["type"],
+          :name => xmlquestion["name"],
+          :body => xmlquestion["body"],
+          :noticewrong => xmlquestion["notice_on_wrong"],
+          :noticeright => xmlquestion["notice_on_correct"],
+          :notice => xmlquestion["notice"],
+          :topic_id => importtopic.id
+          )
+          xmllesson.xpath("question").each do |xmlanswer|
+            importanswer = Answer.create(
+            :notice => xmlanswer["notice"],
+            :body => xmlanswer["body"],
+            :correct => xmlanswer["correct"],
+            :pattern => xmlquestion["pattern"],
+            :question_id => importquestion.id
+            )
+
+          end
+        end
+      end
+    end
+  # f.close
+
+  end
 
   # GET /imports
   # GET /imports.json
@@ -62,13 +109,14 @@ class ImportsController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_import
-      @import = Import.find(params[:id])
-    end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
-    def import_params
-      params.require(:import).permit(:useless, :xmlfile)
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_import
+    @import = Import.find(params[:id])
+  end
+
+  # Never trust parameters from the scary internet, only allow the white list through.
+  def import_params
+    params.require(:import).permit(:useless, :xmlfile)
+  end
 end
