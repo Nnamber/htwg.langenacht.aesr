@@ -29,10 +29,7 @@ class TopicsController < ApplicationController
   def new
     if params[:c_id] != nil
       @course = Course.find(params[:c_id])
-      @@c_id = @course.id
       session[:course_id] = @course.id
-     else
-      @@c_id = nil
     end
     
     @topic = Topic.new
@@ -46,12 +43,8 @@ class TopicsController < ApplicationController
   # POST /topics.json
   def create
     @topic = Topic.new(topic_params)
-    if @@c_id != nil
-       @currentcourse = Course.find_by_id(@@c_id)
-       @@c_id = nil
-     else
-       @currentcourse = Course.find_by_id(session[:course_id])
-    end
+    @currentcourse = Course.find_by_id(session[:course_id])
+
     @topic.course_id = @currentcourse.id
    
 

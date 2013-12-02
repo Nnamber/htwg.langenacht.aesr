@@ -30,10 +30,7 @@ class QuestionsController < ApplicationController
   def new
     if params[:t_id] != nil
       @topic = Topic.find(params[:t_id])
-      @@t_id = @topic.id
       session[:topic_id] = @topic.id
-    else
-    @@t_id = nil
     end
 
     @question = Question.new
@@ -47,12 +44,8 @@ class QuestionsController < ApplicationController
   # POST /questions.json
   def create
     @question = Question.new(question_params)
-    if @@t_id != nil
-      @currenttopic = Topic.find_by_id(@@t_id)
-      @@t_id = nil
-    else
-     @currenttopic = Topic.find_by_id(session[:topic_id])
-    end
+    @currenttopic = Topic.find_by_id(session[:topic_id])
+    
     @question.topic_id = @currenttopic.id
 
     respond_to do |format|

@@ -18,10 +18,8 @@ class AnswersController < ApplicationController
   def new
     if params[:q_id] != nil
       @currentquestion = Question.find(params[:q_id])
-    @@q_id = @currentquestion.id
-    session[:question_id] = @currentquestion.id
+      session[:question_id] = @currentquestion.id
     else
-      @@q_id = nil
       @currentquestion = Question.find_by_id(session[:question_id])
     end
     @questiontype = @currentquestion.questiontype
@@ -41,12 +39,8 @@ class AnswersController < ApplicationController
     @answer = Answer.new(answer_params)
     @currenttype = Question.find_by_id(session[:questiontype])
 
-    if @@q_id != nil
-      @currentquestion = Question.find_by_id(@@q_id)
-      @@q_id = nil
-    else
-      @currentquestion = Question.find_by_id(session[:question_id])
-    end
+    @currentquestion = Question.find_by_id(session[:question_id])
+
     @answer.question_id = @currentquestion.id
 
     respond_to do |format|
