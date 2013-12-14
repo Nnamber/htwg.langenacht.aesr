@@ -78,7 +78,13 @@
 						</li>
 						<li class="divider"></li>
 						<li>
-							<%= link_to "XML importieren", new_import_path %>
+							<%= link_to "XML importieren", new_import_path, data: {:'reveal-id' => 'myModal'} %>
+							<div id="myModal" class="reveal-modal" data-reveal>
+								<% title "XML Datei importieren" %>
+								<%= render 'imports/new' %>
+						
+							</div>
+
 						</li>
 						<li class="divider"></li>
 					</ul>
