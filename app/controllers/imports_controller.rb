@@ -1,10 +1,10 @@
 class ImportsController < ApplicationController
   before_action :set_import, only: [:show, :edit, :update, :destroy, :import_file]
-  def import_file
-    import = Import.find(params[:id])
+  def import_file(import)
+    # import = import_id #Import.find(import_id)
     xmlcourses = Nokogiri::XML(File.read(import.xmlfile.path))
     parse_file(xmlcourses)
-    redirect_to courses_path
+    # redirect_to courses_path
   end
 
   def parse_file(doc)
@@ -81,13 +81,14 @@ class ImportsController < ApplicationController
 
     respond_to do |format|
       if @import.save
-        format.html { redirect_to @import, notice: 'Import was successfully created.' }
+        format.html { redirect_to courses_path, notice: 'Datei erfolgreich importiert.' }
         format.json { render action: 'show', status: :created, location: @import }
       else
         format.html { render action: 'new' }
         format.json { render json: @import.errors, status: :unprocessable_entity }
       end
     end
+    import_file(@import)
   end
 
   # PATCH/PUT /imports/1
@@ -95,7 +96,7 @@ class ImportsController < ApplicationController
   def update
     respond_to do |format|
       if @import.update(import_params)
-        format.html { redirect_to @import, notice: 'Import was successfully updated.' }
+        format.html { redirect_to @import, notice: 'Datei erfolgreich importiert.' }
         format.json { head :no_content }
       else
         format.html { render action: 'edit' }
