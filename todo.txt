@@ -1,15 +1,14 @@
 TODO
 
 Ruby
-- quick navigation rekursiv machen
+- woher kommen die <li>'s ?!
 - usability quickstart überdenken und anpassen (Benamsung)
 - Sprache anpassen --> dt
 - Größe der Textfelder anpassen
-- optional: Passwort ändern
-- Kind Elemente mitlöschen
+- optional: Kind Elemente mitlöschen
 - Breadcrumb (ohne wirst verrückt)
 - fix: Wert von deaktivierter Checkbox bei MatchTask übergeben 
-- xml parser triggern
+- Daten strippen (HTML und co)
 
 Android
 - Antworten validieren
