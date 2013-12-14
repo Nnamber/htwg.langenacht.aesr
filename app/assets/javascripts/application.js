@@ -17,3 +17,16 @@
 //= require_tree .
 
 $(function(){ $(document).foundation(); });
+
+$(document).ready(
+    function(){
+        $('input:file').change(
+            function(){
+                if ($(this).val() != null ) {
+                    $('input:submit').attr('disabled',false);
+                    // or, as has been pointed out elsewhere:
+                    // $('input:submit').removeAttr('disabled'); 
+                } 
+            }
+            );
+    });

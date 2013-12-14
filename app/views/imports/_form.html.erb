@@ -9,7 +9,9 @@
 	<% end %>
 </div>
 <% end %>
-
+<h3 class="subheader">XML - Importer</h3>
+<h6 class="subheader">Datei über Fileupload-Dialog auswählen und hochladen</h6>
+<br>
 <div class="row collapse">
 	<div class="small-2 columns">
 		<%= f.label "Datei auswählen:", class:"right inline" %>
@@ -20,8 +22,7 @@
 </div>
 <div class="row collapse">
 	<div class="small-10 small-offset-2 columns">
-		<%= f.submit "Datei hochladen" %>
+		<%= f.submit "Datei hochladen", :disabled => true %>
 	</div>
 </div>
-<p><br /><strong>1. Schritt: Uploaden der gewünschten Datei</strong><br />Import erst auf nächster Seite</p>
 <% end %>
