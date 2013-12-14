@@ -1,14 +1,20 @@
 TODO
 
 Ruby
-- woher kommen die <li>'s ?!
-- usability quickstart überdenken und anpassen (Benamsung)
+- usability quickstart überdenken und anpassen (Benamsung) --> Quickstart ist ne tolle Sache. --> Dafür müssen die entsprechenden paramter im get mitgegeben werden. um bspw. die antworter einer Frage zuordnen zu können
 - Sprache anpassen --> dt
 - Größe der Textfelder anpassen
-- optional: Kind Elemente mitlöschen
+- optional: Kind Elemente mitlöschen --> erledigt
 - Breadcrumb (ohne wirst verrückt)
 - fix: Wert von deaktivierter Checkbox bei MatchTask übergeben 
 - Daten strippen (HTML und co)
+- Login mit user(sessionhandling). User passwort liegt gehashed in der Datenbank, hierfür BCrypt eingesetzt
+- XML import. Beim import wird unnützes zeug direkt gekickt
+- foundation macht das ganze schön
+- render json so modifiziert, dass diese auch für nicht authorisierte benutzer zugänglich ist(hintergrund: zugriff über android)
+- außerdem beinhaltete die json direkt ALLE tabellen
+- abhämngige objkete werden beim löschen des parent mitgelöscht und leichen nicht ab
+- Titel wird mit der methode titel() im application_helper gesetzt und im Tab wie auch in der überschrift eingeblendet
 
 Android
 - Antworten validieren

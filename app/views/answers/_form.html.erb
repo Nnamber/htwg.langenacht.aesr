@@ -27,7 +27,7 @@
 	</div>
 </div>
 <div class="row collapse" id="field_correct">
-	<% if @questiontype == "multiplechoice" || @questiontype == "singlechoice" %>
+	<% if @questiontype == "MultipleChoice" || @questiontype == "SingleChoice" %>
 	<div class="small-2 columns">
 		<%= f.label :correct, class:"right inline"%>
 	</div>
@@ -39,7 +39,7 @@
 		<%= f.label :correct, class:"right inline", title: "Muss diesem Fragetyp angehakt sein", data: {tooltip:true}  %>
 	</div>
 	<div class="small-10 columns">
-		<%= f.check_box :correct, :checked=>true %>
+		<%= f.check_box :correct, :checked=>true, :disabled => true%>
 	</div>
 	<% end %>
 </div>
