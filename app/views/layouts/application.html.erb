@@ -62,11 +62,11 @@
 													<label>Antwort anlegen</label>
 												</li>
 												<% $questions.each do |question| %>
-												<li>
 													<% if topic.id == question.topic_id %>
+													<li>
 													<%= link_to question.name, new_answer_path(:q_id => question.id) %>
+													</li>
 													<% end %>
-												</li>
 												<% end %>
 											</ul>
 										</li>
