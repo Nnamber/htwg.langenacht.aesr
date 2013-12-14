@@ -17,32 +17,32 @@ class ImportsController < ApplicationController
 
       xmlcourse.xpath("lesson").each do |xmllesson|
         importtopic = Topic.create(
-        :name => xmllesson['name'],
-        :description => xmllesson['description'],
+        :name => strip(xmllesson['name']),
+        :description => strip(xmllesson['description']),
         :course_id => importcourse.id
         )
         xmllesson.xpath("question").each do |xmlquestion|
           importquestion = Question.create(
-          :questiontype => xmlquestion['type'],
-          :name => xmlquestion['name'],
-          :body => xmlquestion['body'],
-          :noticewrong => xmlquestion['notice_on_wrong'],
-          :noticeright => xmlquestion['notice_on_correct'],
-          :notice => xmlquestion['notice'],
+          :questiontype => strip(xmlquestion['type']),
+          :name => strip(xmlquestion['name']),
+          :body => strip(xmlquestion['body']),
+          :noticewrong => strip(xmlquestion['notice_on_wrong']),
+          :noticeright => strip(xmlquestion['notice_on_correct']),
+          :notice => strip(xmlquestion['notice']),
           :topic_id => importtopic.id
 
           )
           if importquestion.questiontype == 'OpenQuestion'
             importanswer = Answer.create(
-            :pattern => xmlquestion['pattern'],
+            :pattern => strip(xmlquestion['pattern']),
             :question_id => importquestion.id
           )
           else
             xmlquestion.xpath("answer").each do |xmlanswer|
               importanswer = Answer.create(
-              :notice => xmlanswer['notice'],
-              :body => xmlanswer['body'],
-              :correct => xmlanswer['correct'],
+              :notice => strip(xmlanswer['notice']),
+              :body => strip(xmlanswer['body']),
+              :correct => strip(xmlanswer['correct']),
               :question_id => importquestion.id
               )
             end
@@ -53,6 +53,15 @@ class ImportsController < ApplicationController
   # f.close
 
   end
+  
+  def strip(htmlText)
+    htmlText = htmlText.gsub(/<br \/>/, '\n')
+    htmlText = htmlText.gsub(/<pre>\s*<br\s*\/>\s*<\/pre>/, "")
+    htmlText = htmlText.gsub(/<pre>/, "<code>")
+    htmlText = htmlText.gsub(/<\/pre>/, "</code>")
+    return htmlText
+  end
+  
 
   # GET /imports
   # GET /imports.json
