@@ -56,9 +56,12 @@ class ImportsController < ApplicationController
   
   def strip(htmlText)
     htmlText = htmlText.gsub(/<br \/>/, '\n')
-    htmlText = htmlText.gsub(/<pre>\s*<br\s*\/>\s*<\/pre>/, "")
     htmlText = htmlText.gsub(/<pre>/, "<code>")
     htmlText = htmlText.gsub(/<\/pre>/, "</code>")
+    htmlText = htmlText.gsub(/<p>/, "")
+    htmlText = htmlText.gsub(/<\/p>/,"")
+    htmlText = htmlText.gsub(/<\/code>\s*<code>/, "")
+
     return htmlText
   end
   
