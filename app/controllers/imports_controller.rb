@@ -78,16 +78,6 @@ class ImportsController < ApplicationController
   # POST /imports.json
   def create
     @import = Import.new(import_params)
-
-    respond_to do |format|
-      if @import.save
-        format.html { redirect_to @import, notice: 'Import was successfully created.' }
-        format.json { render action: 'show', status: :created, location: @import }
-      else
-        format.html { render action: 'new' }
-        format.json { render json: @import.errors, status: :unprocessable_entity }
-      end
-    end
   end
 
   # PATCH/PUT /imports/1

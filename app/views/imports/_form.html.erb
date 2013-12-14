@@ -1,8 +1,7 @@
+<% @import = Import.new %>
 <%= form_for(@import) do |f| %>
 <% if @import.errors.any? %>
 <div id="error_explanation">
-	<!--<h2><%= pluralize(@import.errors.count, "error") %> prohibited this import from being saved:</h2>-->
-
 	<% @import.errors.full_messages.each do |msg| %>
 	<div class="small-3 push-2" id="flash_error">
 		<%= msg %>
@@ -24,5 +23,5 @@
 		<%= f.submit "Datei hochladen" %>
 	</div>
 </div>
-<p><br /><strong>!-- z.Zt. upload != import --!</strong><br />Import erst auf nächster Seite</p>
+<p><br /><strong>1. Schritt: Uploaden der gewünschten Datei</strong><br />Import erst auf nächster Seite</p>
 <% end %>
