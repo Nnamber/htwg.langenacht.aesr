@@ -1,26 +1,28 @@
-<h1>Listing imports</h1>
+<h3 class="subheader">Importierte Dateien</h1>
 
 <table>
-  <thead>
-    <tr>
-      <th>Dateiname</th>
-      <th>Pfad</th>
-      <th></th>
-      <!--th></th-->
-    </tr>
-  </thead>
+	<thead>
+		<tr>
+			<th>Dateiname</th>
+			<th>Pfad</th>
+			<th>Datum</th>
+			<th></th>
+			<!--th></th-->
+		</tr>
+	</thead>
 
-  <tbody>
-    <% @imports.each do |import| %>
-      <tr>
-        <td><%= import.xmlfile_file_name %></td>
-        <td><%= import.xmlfile.url %></td>
-        <td><%= link_to 'anzeigen', import %></td>
-        <!--td><%= link_to 'Edit', edit_import_path(import) %></td-->
-        <!--td><%= link_to 'Destroy', import, method: :delete, data: { confirm: 'Are you sure?' } %></td-->
-      </tr>
-    <% end %>
-  </tbody>
+	<tbody>
+		<% @imports.each do |import| %>
+		<tr>
+			<td><%= import.xmlfile_file_name %></td>
+			<td><%= import.xmlfile.url %></td>
+			<td><%= import.xmlfile_created_at %></td>
+			<td><%= link_to 'anzeigen', import %></td>
+			<!--td><%= link_to 'Edit', edit_import_path(import) %></td-->
+			<!--td><%= link_to 'Destroy', import, method: :delete, data: { confirm: 'Are you sure?' } %></td-->
+		</tr>
+		<% end %>
+	</tbody>
 </table>
 
 <br>

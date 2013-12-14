@@ -1,5 +1,5 @@
 class ImportsController < ApplicationController
-  before_action :set_import, only: [:show, :edit, :update, :destroy]
+  before_action :set_import, only: [:show, :edit, :update, :destroy, :import_file]
   def import_file
     import = Import.find(params[:id])
     xmlcourses = Nokogiri::XML(File.read(import.xmlfile.path))
@@ -17,29 +17,35 @@ class ImportsController < ApplicationController
 
       xmlcourse.xpath("lesson").each do |xmllesson|
         importtopic = Topic.create(
-        :name => xmllesson["name"],
-        :description => xmllesson["description"],
+        :name => xmllesson['name'],
+        :description => xmllesson['description'],
         :course_id => importcourse.id
         )
         xmllesson.xpath("question").each do |xmlquestion|
           importquestion = Question.create(
-          :questiontype => xmlquestion["type"],
-          :name => xmlquestion["name"],
-          :body => xmlquestion["body"],
-          :noticewrong => xmlquestion["notice_on_wrong"],
-          :noticeright => xmlquestion["notice_on_correct"],
-          :notice => xmlquestion["notice"],
+          :questiontype => xmlquestion['type'],
+          :name => xmlquestion['name'],
+          :body => xmlquestion['body'],
+          :noticewrong => xmlquestion['notice_on_wrong'],
+          :noticeright => xmlquestion['notice_on_correct'],
+          :notice => xmlquestion['notice'],
           :topic_id => importtopic.id
-          )
-          xmllesson.xpath("question").each do |xmlanswer|
-            importanswer = Answer.create(
-            :notice => xmlanswer["notice"],
-            :body => xmlanswer["body"],
-            :correct => xmlanswer["correct"],
-            :pattern => xmlquestion["pattern"],
-            :question_id => importquestion.id
-            )
 
+          )
+          if importquestion.questiontype == 'OpenQuestion'
+            importanswer = Answer.create(
+            :pattern => xmlquestion['pattern'],
+            :question_id => importquestion.id
+          )
+          else
+            xmlquestion.xpath("answer").each do |xmlanswer|
+              importanswer = Answer.create(
+              :notice => xmlanswer['notice'],
+              :body => xmlanswer['body'],
+              :correct => xmlanswer['correct'],
+              :question_id => importquestion.id
+              )
+            end
           end
         end
       end
