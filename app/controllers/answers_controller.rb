@@ -19,9 +19,8 @@ class AnswersController < ApplicationController
     if params[:q_id] != nil
       @currentquestion = Question.find(params[:q_id])
       session[:question_id] = @currentquestion.id
-    else
-      @currentquestion = Question.find_by_id(session[:question_id])
     end
+    @currentquestion = Question.find_by_id(session[:question_id])
     @questiontype = @currentquestion.questiontype
     @answer = Answer.new
   end

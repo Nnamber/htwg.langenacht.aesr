@@ -32,7 +32,7 @@ class QuestionsController < ApplicationController
       @topic = Topic.find(params[:t_id])
       session[:topic_id] = @topic.id
     end
-
+    @currenttopic = Topic.find_by_id(session[:topic_id])
     @question = Question.new
   end
 

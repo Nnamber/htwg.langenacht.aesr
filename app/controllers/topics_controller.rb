@@ -31,7 +31,7 @@ class TopicsController < ApplicationController
       @course = Course.find(params[:c_id])
       session[:course_id] = @course.id
     end
-    
+    @currentcourse = Course.find_by_id(session[:course_id])
     @topic = Topic.new
   end
 
